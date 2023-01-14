@@ -1,14 +1,11 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.lang.Math;
 
 public class CNFConverter {
     public static final int LEFT = 1;
     public static final int RIGHT = 2;
     public static final int UP = 3;
     public static final int DOWN = 4;
-    //    public static final int[] DIR = new int[]{ -1000, -1, 1};
     public static int[] m_limit = new int[]{0, 1, 10, 1, 10};
 
     boolean isLUCornerCell(int i, int j) {
@@ -85,73 +82,12 @@ public class CNFConverter {
         return res;
     }
 
-    /*
-    return binary strings with fixed length.
-    i.e n=2 [00, 01, 10, 11]
-    n = [log2(num of old variables)]
-    */
-    public static List<String> generateBinaryStrings(int n) {
-        List<String> stringPermutations = new ArrayList<>();
-        // number of permutations is 2^n (represented in binary by 2 bits 0 and 1)
-        int permutations = (int) Math.pow(2, n);
-
-
-        // Sinh du "permutations" chuoi nhi phan
-        for (int bits = 0; bits < permutations; bits++) {
-            String permutation = convert(bits, n);
-            stringPermutations.add(permutation);
-        }
-        Collections.sort(stringPermutations);
-        return stringPermutations;
-    }
-
-    public static String convert(int bits, int n) {
-        String conversion = "";
-        while (n-- > 0) {
-            int bit = bits & 1; // Retrieves the rightmost bit
-            if (bit == 0) {
-                conversion += "0";
-            } else {
-                conversion += "1";
-            }
-
-            // >> means signed right shift
-            bits >>= 1; // Removes the rightmost bit.
-        }
-        return conversion;
-    }
-
-    /*
-    * bits = 0 --> bit = 0 & 1 = 0 --> conversion = 0 --> bits = 0 >> 1 = 0 --> bit = 0 & 1 = 0 --> conversion = 00
-    * bits = 1 --> bit = 1 & 1 = 1 --> conversion = 1 --> bits = 1 >> 1 = 0 --> bit = 0 & 1 = 0 --> conversion = 10
-    * bits = 2 --> bit = 2 & 1 = 0 --> conversion = 0 --> bits = 2 >> 1 = 1 --> bit = 1 & 1 = 1 --> conversion = 01
-    * bits = 3 --> bit = 3 & 1 = 1 --> conversion = 1 --> bits = 3 >> 1 = 1 --> bit = 1 & 1 = 1 --> conversion = 11
-    * stringPermutations = [00, 01, 10, 11]
-    * */
-    // q: why the result of even number AND 1 is 0?
-    // a: because the rightmost bit of even number is 0, so the result of AND 1 is 0
-    // q: why we have to remove the rightmost bit in line 117?
-    // a: because we have to check the next bit of the number
-
-
-
-    // i.e.
-    public static String reverseString(String str) {
-        String nstr = "";
-        char ch;
-        for (int i = 0; i < str.length(); i++) {
-            ch = str.charAt(i); //extracts each character
-            nstr = ch + nstr; //adds each character in front of the existing string
-        }
-        return nstr;
-    }
 
     public SatEncoding generateSat(NumberLink numberLink) {
         m_limit[DOWN] = numberLink.getRow();
         m_limit[RIGHT] = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
-        int adding_vars = (int) Math.ceil((Math.log(max_num) / Math.log(2)));
-        // Math.log(max_num) / Math.log(2) = log2(max_num)
+        int adding_vars = max_num - 1;
         int[][] inputs = numberLink.getInputs();
         int variables = 0;
         int clauses = 0;
@@ -332,51 +268,25 @@ public class CNFConverter {
     // For blank cells: at most one value is TRUE in each blank cell
     private List<String> onlyOneValue(int i, int j, NumberLink numberLink) {
         List<String> resultStringList = new ArrayList<>();
-//        String tmpClause = "onlyOneValue";
-//        resultStringList.add(tmpClause);
-        int max_num = numberLink.getMaxNum(); // max_num = 4 (5x5 1.in)
-        int adding_vars = (int) Math.ceil((Math.log(max_num) / Math.log(2))); // adding_vars = log2(4) = 2
-        List<String> binaryStrings = generateBinaryStrings(adding_vars);
-        // binaryStrings = ["00", "01", "10", "11"]
-        // cắt bớt, chỉ lấy n = max_num xâu
-        binaryStrings = binaryStrings.subList(0, max_num);
-        // binaryStrings = ["00", "01", "10", "11"]
-
-        for (int k = 1; k <= max_num; k++) { // k = 1 --> 4
-
-            String binary = binaryStrings.get(k - 1);
-            binary = reverseString(binary);
-            // binary = "00"
-            // Tại sao lại chạy q từ max_num + 1 đến max_num + adding_vars
-            for (int q = max_num + 1; q <= max_num + adding_vars; q++) {  // q = 5 --> 6
-                String clause = "";
-                // -X v
-                clause += -computePosition(i, j, k, numberLink) + " ";
-                // clause = -Xijk
-                char bit = binary.charAt(q - max_num - 1);
-                if (bit == '0') {
-                    // -Y
-                    clause += -computePosition(i, j, q, numberLink) + " ";
-                } else {
-                    // Y
-                    clause += computePosition(i, j, q, numberLink) + " ";
-                }
-                clause += "0";
-                resultStringList.add(clause);
-            }
+        int maxNum = numberLink.getMaxNum();
+        int newVars = maxNum - 1;
+        String firstClause = "";
+        firstClause += -computePosition(i, j, 1, numberLink) + " " + computePosition(i, j, maxNum + 1, numberLink) + " 0";
+        resultStringList.add(firstClause);
+        for (int k = 2; k < numberLink.getMaxNum(); k++) {
+            String tmp1 = -computePosition(i, j, k, numberLink) + " " + computePosition(i, j, k + maxNum, numberLink) + " 0";
+            String tmp2 = -computePosition(i, j, k - 1 + maxNum, numberLink) + " " + computePosition(i, j, k + maxNum, numberLink) + " 0";
+            String tmp3 = -computePosition(i, j, k - 1 + maxNum, numberLink) + " " + -computePosition(i, j, k, numberLink) + " 0";
+            resultStringList.add(tmp1);
+            resultStringList.add(tmp2);
+            resultStringList.add(tmp3);
         }
-
-//        String tmpClause2 = "end";
-//        resultStringList.add(tmpClause2);
-
-        //        for (int k = 1; k <= numberLink.getMaxNum(); k++) {
-//            exactNumLine += computePosition(i, j, k, numberLink) + " ";
-//        }
-//        exactNumLine += "0";
-//        resultStringList.add(exactNumLine);
-
+        String finalClause = "";
+        finalClause += -computePosition(i, j, newVars + maxNum, numberLink) + " " + -computePosition(i, j, maxNum, numberLink) + " 0";
+        resultStringList.add(finalClause);
         return resultStringList;
     }
+
 
     // For numbered cells: only the existed value is TRUE
     private List<String> valueFromInput(int i, int j, int num, NumberLink numberLink) {
@@ -411,11 +321,12 @@ public class CNFConverter {
         // vd -9 <=> -X9, có đảm bảo được các biến là các số liên tiếp ko?
         int n = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
-        int adding_vars = (int) Math.ceil((Math.log(max_num) / Math.log(2)));
+        int adding_vars = max_num - 1;
         int X_vars = numberLink.getRow() * numberLink.getCol() * max_num;
         if (value <= max_num)
             return n * (i - 1) * max_num + (j - 1) * max_num + value;
         return X_vars + n * (i - 1) * adding_vars + (j - 1) * adding_vars + value;
+        // Trường hợp 2 return trả về cùng 1 kết quả thì sao?
     }
 
 

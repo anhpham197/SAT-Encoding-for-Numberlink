@@ -22,7 +22,7 @@ public class Controller {
     static String sat = "UNSAT";
     static String time = "";
     static String parameters = "";
-    public static File outFile = new File("./output/log.txt");
+    public static File outFile = new File("./output/log2.txt");
     private static String result;
 
     public static List<String> inFoList() {
@@ -79,7 +79,6 @@ public class Controller {
 
         //long t1 = System.currentTimeMillis();
         SatEncoding satEncoding = cnfConverter.generateSat(numberLink);
-
         clause = satEncoding.getClauses();
         vars = satEncoding.getVariables();
         String firstLine = "p cnf " + vars + " " + clause;
