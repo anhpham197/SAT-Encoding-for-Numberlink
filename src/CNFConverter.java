@@ -97,36 +97,35 @@ public class CNFConverter {
 
                 // cells have number
                 if (inputs[i][j] != 0) {
-
+                    // rule0: only the existed value is TRUE
+                    // rule1: other value is FALSE
                     List<String> rule0 = valueFromInput(i, j, inputs[i][j], numberLink);
                     List<String> rule1 = notValuesFromInput(i, j, inputs[i][j], numberLink);
-                    clauses += rule1.size();
-                    rules.addAll(rule1);
                     List<String> rule2 = exact_one_direction(i, j, numberLink);
 
-                    clauses += rule0.size() + rule2.size();
-
+                    rules.addAll(rule1);
                     rules.addAll(rule0);
                     rules.addAll(rule2);
 
+                    clauses += rule0.size() + rule1.size() + rule2.size();
+
                     // blank cell
                 } else {
-                    List<String> baseRule1 = onlyOneValue(i, j, numberLink);
-
-                    clauses += baseRule1.size();
-                    rules.addAll(baseRule1);
-
+                    List<String> rule1 = onlyOneValue(i, j, numberLink);
                     List<String> rule2 = has_two_directions(i, j, numberLink);
 
-                    clauses += rule2.size();
-
+                    rules.addAll(rule1);
                     rules.addAll(rule2);
+
+                    clauses += rule1.size() + rule2.size();
                 }
             }
         }
         // Phải xem xem chỗ nào dùng biến thì mới cộng biến
         variables = m_limit[DOWN] * m_limit[RIGHT] * max_num +
                 adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - max_num * 2);
+        // max_num * 2: tổng số ô có số trong bảng
+        // Do chỉ thực hiện Encoding cho blank cells trong trường hợp onlyOneValue (mỗi ô chỉ có 1 giá trị)
         return new SatEncoding(rules, clauses, variables);
     }
 
@@ -250,6 +249,7 @@ public class CNFConverter {
         resultStringList.add(firstClause);
 
         // AT MOST 1 is TRUE --> tại sao không dùng công thức dựa trên biến mới như trong slides thầy Khánh
+        // => Nếu dùng Sequential encounter encoding thì cần 5 mệnh đề để biểu diễn AT MOST ONE cho mỗi ô
         int numCells = adjacentCells.size();
         for (int k = 0; k <= numCells - 2; k++) {
             String secondClause = -adjacentCells.get(k) + " ";
