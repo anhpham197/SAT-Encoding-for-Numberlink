@@ -124,6 +124,7 @@ public class CNFConverter {
                 }
             }
         }
+        // Phải xem xem chỗ nào dùng biến thì mới cộng biến
         variables = m_limit[DOWN] * m_limit[RIGHT] * max_num +
                 adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - max_num * 2);
         return new SatEncoding(rules, clauses, variables);
@@ -318,7 +319,6 @@ public class CNFConverter {
 
 
     private int computePosition(int i, int j, int value, NumberLink numberLink) {
-        // vd -9 <=> -X9, có đảm bảo được các biến là các số liên tiếp ko?
         int n = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
         int adding_vars = max_num - 1;
@@ -326,30 +326,6 @@ public class CNFConverter {
         if (value <= max_num)
             return n * (i - 1) * max_num + (j - 1) * max_num + value;
         return X_vars + n * (i - 1) * adding_vars + (j - 1) * adding_vars + value;
-        // Trường hợp 2 return trả về cùng 1 kết quả thì sao?
-    }
-
-
-    public int getValueOf(int row, int col, int positionValue, NumberLink numberLink) {
-        int n = numberLink.getCol();
-        if (positionValue <= n * (n - 1)) {
-            int JValue = (positionValue - 1) % (n - 1) + 1;
-            if (JValue == col) {
-                return RIGHT;
-            } else if (JValue + 1 == col) {
-                return LEFT;
-            } else return 100;
-        } else if (positionValue <= 2 * n * (n - 1)) {
-            int IValue = (positionValue - n * (n - 1) - 1) % (n - 1) + 1;
-            if (IValue == row) {
-                return DOWN;
-            } else if (IValue + 1 == row) {
-                return UP;
-            } else return 100;
-        } else {
-            int tmp = (positionValue - 2 * n * (n - 1 - 1)) % numberLink.getMaxNum() + 1;
-            return ((positionValue - 2 * n * (n - 1) - tmp) / numberLink.getMaxNum() + 1 - col) / n + 1;
-        }
     }
 
     public int getValueOfY(int positionValue, int maxNum, NumberLink numberLink) {
@@ -360,14 +336,4 @@ public class CNFConverter {
         }
         return -1;
     }
-
-    public int getValueOfYJ(int positionValue, NumberLink numberLink) {
-        return ((positionValue - 1) / numberLink.getMaxNum()) % numberLink.getCol() + 1;
-    }
-
-    public int getValueOfYI(int positionValue, NumberLink numberLink) {
-        positionValue = Math.abs(positionValue);
-        return (positionValue - 1) / (numberLink.getMaxNum() * numberLink.getCol()) + 1;
-    }
-
 }
