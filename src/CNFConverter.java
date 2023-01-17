@@ -266,25 +266,9 @@ public class CNFConverter {
         return resultStringList;
     }
 
-    // For blank cells: at most one value is TRUE in each blank cell
+    // For blank cells: AT MOST one value is TRUE in each blank cell
     private List<String> onlyOneValue(int i, int j, NumberLink numberLink) {
         List<String> resultStringList = new ArrayList<>();
-        int maxNum = numberLink.getMaxNum();
-        int newVars = maxNum - 1;
-        String firstClause = "";
-        firstClause += -computePosition(i, j, 1, numberLink) + " " + computePosition(i, j, maxNum + 1, numberLink) + " 0";
-        resultStringList.add(firstClause);
-        for (int k = 2; k < numberLink.getMaxNum(); k++) {
-            String tmp1 = -computePosition(i, j, k, numberLink) + " " + computePosition(i, j, k + maxNum, numberLink) + " 0";
-            String tmp2 = -computePosition(i, j, k - 1 + maxNum, numberLink) + " " + computePosition(i, j, k + maxNum, numberLink) + " 0";
-            String tmp3 = -computePosition(i, j, k - 1 + maxNum, numberLink) + " " + -computePosition(i, j, k, numberLink) + " 0";
-            resultStringList.add(tmp1);
-            resultStringList.add(tmp2);
-            resultStringList.add(tmp3);
-        }
-        String finalClause = "";
-        finalClause += -computePosition(i, j, newVars + maxNum, numberLink) + " " + -computePosition(i, j, maxNum, numberLink) + " 0";
-        resultStringList.add(finalClause);
         return resultStringList;
     }
 
