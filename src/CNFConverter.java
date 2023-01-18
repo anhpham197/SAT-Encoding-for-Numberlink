@@ -87,7 +87,7 @@ public class CNFConverter {
         m_limit[DOWN] = numberLink.getRow();
         m_limit[RIGHT] = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
-        int adding_vars = max_num - 1;
+        int adding_vars = (int) Math.sqrt(max_num);
         int[][] inputs = numberLink.getInputs();
         int variables = 0;
         int clauses = 0;
@@ -269,6 +269,130 @@ public class CNFConverter {
     // For blank cells: AT MOST one value is TRUE in each blank cell
     private List<String> onlyOneValue(int i, int j, NumberLink numberLink) {
         List<String> resultStringList = new ArrayList<>();
+        int maxNum = numberLink.getMaxNum();
+        // newVars = groupSize
+        int groupSize = (int) Math.sqrt(maxNum);
+        int varsPerGroup = maxNum / groupSize;
+
+        // ALO for groupSize groups
+//        String ALOclause = "";
+//        for (int k = 1; k <= groupSize; k++) {
+//            ALOclause += computePosition(i, j, k + maxNum, numberLink) + " ";
+//        }
+//        ALOclause += "0";
+//        resultStringList.add(ALOclause);
+
+        // AMO on the set of all commander variables: (-c1 v -c2)  (-c1 v -c3)  (-c2 v -c3)
+        for (int k = 1; k <= groupSize - 1; k++) {
+            String tmp = -computePosition(i, j, k + maxNum, numberLink) + " ";
+            for (int q = k + 1; q <= groupSize; q++) {
+                String clause = tmp + -computePosition(i, j, q + maxNum, numberLink) + " 0";
+                resultStringList.add(clause);
+            }
+        }
+
+        // AMO for each group Gi
+        int startOfGi = 1;
+        int endOfGi = varsPerGroup;
+        if (maxNum % groupSize == 0) {
+            for (int k = 1; k <= groupSize; k++) {
+                for (int q = startOfGi; q <= endOfGi - 1; q++) {
+                    String tmp = -computePosition(i, j, q, numberLink) + " ";
+                    for (int l = q + 1; l <= endOfGi; l++) {
+                        String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
+                        resultStringList.add(clause);
+                    }
+                }
+                startOfGi = endOfGi + 1;
+                endOfGi += varsPerGroup;
+            }
+        } else {
+            for (int k = 1; k < groupSize; k++) {
+                for (int q = startOfGi; q <= endOfGi - 1; q++) {
+                    String tmp = -computePosition(i, j, q, numberLink) + " ";
+                    for (int l = q + 1; l <= endOfGi; l++) {
+                        String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
+                        resultStringList.add(clause);
+                    }
+                }
+                startOfGi = endOfGi + 1;
+                endOfGi += varsPerGroup;
+            }
+            // last group
+            for (int k = (groupSize - 1) * varsPerGroup + 1; k < maxNum; k++) {
+                String tmp = -computePosition(i, j, k, numberLink) + " ";
+                for (int l = k + 1; l <= maxNum; l++) {
+                    String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
+                    resultStringList.add(clause);
+                }
+            }
+        }
+
+
+        // If Ci is TRUE --> some variables in Gi are TRUE
+        int startOfCi = 1;
+        int endOfCi = varsPerGroup;
+        if (maxNum % groupSize == 0) {
+            for (int k = 1; k <= groupSize; k++) {
+                String tmp = -computePosition(i, j, k + maxNum, numberLink) + " ";
+                for (int q = startOfCi; q <= endOfCi; q++) {
+                    tmp += computePosition(i, j, q, numberLink) + " ";
+                }
+                tmp += "0";
+                resultStringList.add(tmp);
+                startOfCi = endOfCi + 1;
+                endOfCi += varsPerGroup;
+            }
+        } else {
+            for (int k = 1; k < groupSize; k++) {
+                String tmp = -computePosition(i, j, k + maxNum, numberLink) + " ";
+                for (int q = startOfCi; q <= endOfCi; q++) {
+                    tmp += computePosition(i, j, q, numberLink) + " ";
+                }
+                tmp += "0";
+                resultStringList.add(tmp);
+                startOfCi = endOfCi + 1;
+                endOfCi += varsPerGroup;
+            }
+            // last group
+            String tmp = -computePosition(i, j, groupSize + maxNum, numberLink) + " ";
+            for (int k = (groupSize - 1) * varsPerGroup; k <= maxNum; k++) {
+                tmp += computePosition(i, j, k, numberLink) + " 0";
+            }
+            resultStringList.add(tmp);
+        }
+
+        // If Ci is FALSE --> all variables in Gi is FALSE
+        startOfCi = 1;
+        endOfCi = varsPerGroup;
+        if (maxNum % groupSize == 0) {
+            for (int k = 1; k <= groupSize; k++) {
+                String tmp = computePosition(i, j, k + maxNum, numberLink) + " ";
+                for (int l = startOfCi; l <= endOfCi; l++) {
+                    String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
+                    resultStringList.add(clause);
+                }
+                startOfCi = endOfCi + 1;
+                endOfCi += varsPerGroup;
+            }
+        } else {
+            for (int k = 1; k < groupSize; k++) {
+                String tmp = computePosition(i, j, k + maxNum, numberLink) + " ";
+                for (int l = startOfCi; l <= endOfCi; l++) {
+                    String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
+                    resultStringList.add(clause);
+                }
+                startOfCi = endOfCi + 1;
+                endOfCi += varsPerGroup;
+            }
+            // last group
+            String tmp = computePosition(i, j, groupSize + maxNum, numberLink) + " ";
+            for (int k = (groupSize - 1) * varsPerGroup + 1; k <= maxNum; k++) {
+                String clause = tmp + -computePosition(i, j, k, numberLink) + " 0";
+                resultStringList.add(clause);
+            }
+        }
+
         return resultStringList;
     }
 
