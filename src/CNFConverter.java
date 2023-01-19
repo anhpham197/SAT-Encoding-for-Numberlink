@@ -271,6 +271,15 @@ public class CNFConverter {
         List<String> resultStringList = new ArrayList<>();
         int maxNum = numberLink.getMaxNum();
         int newVars = maxNum - 1;
+        // ALO
+        String ALOclauses = "";
+        for (int k = 1; k <= maxNum; k++) {
+            ALOclauses += computePosition(i, j, k, numberLink) + " ";
+        }
+        ALOclauses += "0";
+        resultStringList.add(ALOclauses);
+
+        // AMO
         String firstClause = "";
         firstClause += -computePosition(i, j, 1, numberLink) + " " + computePosition(i, j, maxNum + 1, numberLink) + " 0";
         resultStringList.add(firstClause);
