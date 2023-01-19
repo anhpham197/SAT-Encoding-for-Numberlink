@@ -18,7 +18,7 @@ public class Test {
     static String inputFolderPath1 = "./input";
 //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
-    public static File outFile = new File("./output/out2.txt");
+    public static File outFile = new File("./output/out.txt");
 
     static List<String> res;
 
