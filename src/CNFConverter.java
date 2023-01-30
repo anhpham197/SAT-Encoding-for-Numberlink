@@ -429,7 +429,7 @@ public class CNFConverter {
     private int computePosition(int i, int j, int value, NumberLink numberLink) {
         int n = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
-        int adding_vars = max_num - 1;
+        int adding_vars = (int) Math.sqrt(max_num);
         int X_vars = numberLink.getRow() * numberLink.getCol() * max_num;
         if (value <= max_num)
             return n * (i - 1) * max_num + (j - 1) * max_num + value;

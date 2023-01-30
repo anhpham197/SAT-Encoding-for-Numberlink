@@ -26,8 +26,9 @@ So luong menh de la: 7872
  7  6  6  6  6  6  6  6  6  7 
  7  7  7  7  7  7  7  7  7  7 
 
+
 SAT
-Total time: 330
+Total time: 365
 --------------------------------
 10x10 121.in
 Kich thuoc ma tran: 10x10
@@ -57,8 +58,9 @@ So luong menh de la: 7688
  3 10 10 10 10 10 10 10 10  3 
  3  3  3  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 290
+Total time: 321
 --------------------------------
 10x10 122.in
 Kich thuoc ma tran: 10x10
@@ -88,8 +90,9 @@ So luong menh de la: 7743
  8  3  2  2  2  2  9  9  9  2 
  8  8  8  8  8  2  2  2  2  2 
 
+
 SAT
-Total time: 140
+Total time: 133
 --------------------------------
 10x10 123.in
 Kich thuoc ma tran: 10x10
@@ -119,8 +122,9 @@ So luong menh de la: 8608
  5  7  7  8  8  8  8  8 11 11 
  5  5  5  5  5  5  5  5  5  5 
 
+
 SAT
-Total time: 170
+Total time: 142
 --------------------------------
 10x10 124.in
 Kich thuoc ma tran: 10x10
@@ -150,8 +154,9 @@ So luong menh de la: 7706
  1  5  1  9 10 10 10 10 10  9 
  1  1  1  9  9  9  9  9  9  9 
 
+
 SAT
-Total time: 70
+Total time: 66
 --------------------------------
 10x10 130.in
 Kich thuoc ma tran: 10x10
@@ -181,8 +186,9 @@ So luong menh de la: 7577
  9 10 10 10 10 10  9  1  5  1 
  9  9  9  9  9  9  9  1  1  1 
 
+
 SAT
-Total time: 60
+Total time: 85
 --------------------------------
 10x10 131.in
 Kich thuoc ma tran: 10x10
@@ -212,8 +218,9 @@ So luong menh de la: 6575
  5  7  7  7  5  4  4  4  4  1 
  5  5  5  5  5  4  1  1  1  1 
 
+
 SAT
-Total time: 60
+Total time: 70
 --------------------------------
 10x10 132.in
 Kich thuoc ma tran: 10x10
@@ -243,8 +250,10 @@ So luong menh de la: 7121
  2  4  4  4  2  7  8  6  6  1 
  2  2  2  2  2  7  8  1  1  1 
 
+
+
 SAT
-Total time: 50
+Total time: 52
 --------------------------------
 10x10 133.in
 Kich thuoc ma tran: 10x10
@@ -274,8 +283,9 @@ So luong menh de la: 8731
  4  3  3  3  7  7  7  6  6  6 
  4  4  4  4  5  5  5  5  5  5 
 
+
 SAT
-Total time: 70
+Total time: 68
 --------------------------------
 10x10 134.in
 Kich thuoc ma tran: 10x10
@@ -305,8 +315,9 @@ So luong menh de la: 6604
  1  1  4  5  3  3  2  2  2  5 
  1  4  4  5  5  5  5  5  5  5 
 
+
 SAT
-Total time: 50
+Total time: 532
 --------------------------------
 10x10 135.in
 Kich thuoc ma tran: 10x10
@@ -336,8 +347,10 @@ So luong menh de la: 7088
  9  4  4  4  4  2  9  9  9  3 
  9  9  9  9  9  9  9  3  3  3 
 
+
+
 SAT
-Total time: 90
+Total time: 234
 --------------------------------
 10x10 136.in
 Kich thuoc ma tran: 10x10
@@ -367,8 +380,9 @@ So luong menh de la: 7780
  3  2  4  4  4  4  4  4  4  1 
  3  2  2  2  2  1  1  1  1  1 
 
+
 SAT
-Total time: 110
+Total time: 89
 --------------------------------
 10x10 137.in
 Kich thuoc ma tran: 10x10
@@ -398,8 +412,9 @@ So luong menh de la: 7780
  2  3  3  3  7  1  1  1  1  2 
  2  2  2  2  2  2  2  2  2  2 
 
+
 SAT
-Total time: 70
+Total time: 64
 --------------------------------
 10x10 138.in
 Kich thuoc ma tran: 10x10
@@ -429,8 +444,9 @@ So luong menh de la: 8649
  9 10 10 10  5  7  7  7  7  9 
  9  9  9  9  9  9  9  9  9  9 
 
+
 SAT
-Total time: 70
+Total time: 192
 --------------------------------
 10x10 139.in
 Kich thuoc ma tran: 10x10
@@ -460,8 +476,10 @@ So luong menh de la: 7006
  4  9  3  3  3  3  3  2  1  2 
  4  4  4  4  4  4  4  2  2  2 
 
+
+
 SAT
-Total time: 130
+Total time: 208
 --------------------------------
 10x10 140.in
 Kich thuoc ma tran: 10x10
@@ -491,8 +509,9 @@ So luong menh de la: 8526
  1 10  4 11 11 11  3  3  3  3 
 10 10  4  4  4  4  4  4  4  4 
 
+
 SAT
-Total time: 130
+Total time: 158
 --------------------------------
 10x10 141.in
 Kich thuoc ma tran: 10x10
@@ -522,8 +541,9 @@ So luong menh de la: 7853
  5  6  3  3  3  3  8  1  7  8 
  5  6  6  6  6  6  7  7  7  8 
 
+
 SAT
-Total time: 120
+Total time: 234
 --------------------------------
 10x10 142.in
 Kich thuoc ma tran: 10x10
@@ -553,8 +573,9 @@ So luong menh de la: 7798
  2  5  5  6  6  9  8  8  8  9 
  2  2  2  2  6  9  9  9  9  9 
 
+
 SAT
-Total time: 125
+Total time: 104
 --------------------------------
 10x10 143.in
 Kich thuoc ma tran: 10x10
@@ -584,8 +605,10 @@ So luong menh de la: 6989
  4  9  2  2  2  2  2  2  2  6 
  4  4  4  4  4  4  4  4  2  6 
 
+
+
 SAT
-Total time: 70
+Total time: 76
 --------------------------------
 10x10 144.in
 Kich thuoc ma tran: 10x10
@@ -615,8 +638,9 @@ So luong menh de la: 8363
  3  6  3  3  3  3  3  3  3  4 
  3  3  3  4  4  4  4  4  4  4 
 
+
 SAT
-Total time: 550
+Total time: 178
 --------------------------------
 10x10 145.in
 Kich thuoc ma tran: 10x10
@@ -646,8 +670,9 @@ So luong menh de la: 8485
  4  1  4  5  4  4  4  4  4  5 
  4  4  4  5  5  5  5  5  5  5 
 
+
 SAT
-Total time: 40
+Total time: 44
 --------------------------------
 10x15 387.in
 Kich thuoc ma tran: 10x15
@@ -677,8 +702,10 @@ So luong menh de la: 12627
  8  3  3  8  4  5  5  5  5  5  5  5  5  5  4 
  8  8  8  8  4  4  4  4  4  4  4  4  4  4  4 
 
+
+
 SAT
-Total time: 340
+Total time: 180
 --------------------------------
 10x15 388.in
 Kich thuoc ma tran: 10x15
@@ -708,8 +735,10 @@ So luong menh de la: 11661
  3  9  3  8  3  3  3  2  7  3  3  3  1  1  3 
  3  3  3  8  2  2  2  2  7  7  7  3  3  3  3 
 
+
+
 SAT
-Total time: 850
+Total time: 108
 --------------------------------
 10x15 389.in
 Kich thuoc ma tran: 10x15
@@ -739,8 +768,9 @@ So luong menh de la: 10597
  5  4  4  4  4  4  4  4  4  4  4  4  4  4  4 
  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5 
 
+
 SAT
-Total time: 590
+Total time: 194
 --------------------------------
 10x15 390.in
 Kich thuoc ma tran: 10x15
@@ -770,8 +800,10 @@ So luong menh de la: 12812
  3  2  2  2  8  8  8  2  4  1  1  1  1  1  9 
  3  3  3  2  2  2  2  2  4  4  4  9  9  9  9 
 
+
+
 SAT
-Total time: 1180
+Total time: 272
 --------------------------------
 10x15 396.in
 Kich thuoc ma tran: 10x15
@@ -801,8 +833,9 @@ So luong menh de la: 10612
  1  2  2  2  2  2  2  2  2  2  2  7  7  5  4 
  1  1  1  1  1  7  7  7  7  7  7  7  4  4  4 
 
+
 SAT
-Total time: 1210
+Total time: 402
 --------------------------------
 10x15 397.in
 Kich thuoc ma tran: 10x15
@@ -833,8 +866,9 @@ So luong menh de la: 11479
  4  5  5  5  5  5  5  5  5  5  5  5  5  5  5 
 
 
+
 SAT
-Total time: 580
+Total time: 179
 --------------------------------
 10x15 398.in
 Kich thuoc ma tran: 10x15
@@ -864,8 +898,9 @@ So luong menh de la: 10583
  1  4  4  4  4  4  4  4  4  1  6  5  8  8  5 
  1  1  1  1  1  1  1  1  1  1  6  5  5  5  5 
 
+
 SAT
-Total time: 600
+Total time: 292
 --------------------------------
 10x15 399.in
 Kich thuoc ma tran: 10x15
@@ -895,8 +930,10 @@ So luong menh de la: 11495
  1  6  1  4  1  1  1  1  1  9  9  9  9  4  2 
  1  1  1  4  4  4  4  4  4  4  4  4  4  4  2 
 
+
+
 SAT
-Total time: 883
+Total time: 164
 --------------------------------
 10x15 400.in
 Kich thuoc ma tran: 10x15
@@ -926,8 +963,9 @@ So luong menh de la: 10612
  4  2  2  2  2  4  1  3  3  3  3  3  3  3  5 
  4  4  4  4  4  4  1  1  1  1  1  5  5  5  5 
 
+
 SAT
-Total time: 1771
+Total time: 285
 --------------------------------
 10x18 186.in
 Kich thuoc ma tran: 10x18
@@ -957,8 +995,9 @@ So luong menh de la: 20294
 10  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3 10 
 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
 
+
 SAT
-Total time: 1840
+Total time: 433
 --------------------------------
 10x18 187.in
 Kich thuoc ma tran: 10x18
@@ -988,8 +1027,10 @@ So luong menh de la: 15860
 10  6 10 10 10 10 10 10 10  3  3  3  3  5  5  5  3  7 
 10 10 10  5  5  5  5  5  5  5  5  5  5  5  3  3  3  7 
 
+
+
 SAT
-Total time: 3980
+Total time: 889
 --------------------------------
 10x18 198.in
 Kich thuoc ma tran: 10x18
@@ -1019,8 +1060,9 @@ So luong menh de la: 24137
  1  2  3  2  4  5  6  7  6 16 16  4  4  4  4  4  4 14 
  1  2  2  2  4  4  4  4  4  4  4  4 14 14 14 14 14 14 
 
+
 SAT
-Total time: 920
+Total time: 312
 --------------------------------
 10x18 199.in
 Kich thuoc ma tran: 10x18
@@ -1050,8 +1092,9 @@ So luong menh de la: 20440
  4  4  4  4  4  4  4  2  1  8 11 11 11 11  8  5 12  5 
  1  1  1  1  1  1  1  1  1  8  8  8  8  8  8  5  5  5 
 
+
 SAT
-Total time: 510
+Total time: 945
 --------------------------------
 10x18 200.in
 Kich thuoc ma tran: 10x18
@@ -1081,8 +1124,9 @@ So luong menh de la: 18746
  3  4  4  4  4  4  3 10  1  1  1  6  6  6  7  7  7  7 
  3  3  3  3  3  3  3 10 10 10 10 10 10 10 10 10 10 10 
 
+
 SAT
-Total time: 310
+Total time: 589
 --------------------------------
 10x18 208.in
 Kich thuoc ma tran: 10x18
@@ -1112,8 +1156,9 @@ So luong menh de la: 22466
  7  1  1  1 14  7 11 11 11 11 11 11 11  8 11  9 11 10 
  7  7  7  7  7  7 11  8  8  8  8  8  8  8 11 11 11 10 
 
+
 SAT
-Total time: 120
+Total time: 245
 --------------------------------
 10x18 209.in
 Kich thuoc ma tran: 10x18
@@ -1143,8 +1188,9 @@ So luong menh de la: 19060
  2  4  5  5  5  5  5  5  7  7 10 10 10 10 10  7 12  1 
  2  4  4  4  4  4  4  4  4  7  7  7  7  7  7  7 12 12 
 
+
 SAT
-Total time: 100
+Total time: 76
 --------------------------------
 10x18 414.in
 Kich thuoc ma tran: 10x18
@@ -1174,8 +1220,9 @@ So luong menh de la: 25306
  5  4  4  4 11 11  5 12  8  8  8 14 14 12 14 14 14  6 
  5  5  5  5  5  5  5 12 12 12 12 12 12 12  6  6  6  6 
 
+
 SAT
-Total time: 80
+Total time: 84
 --------------------------------
 10x18 415.in
 Kich thuoc ma tran: 10x18
@@ -1205,8 +1252,9 @@ So luong menh de la: 23894
  5  8  8  8 15 15 13 13 13  3  3  3  3  3  3  3  3 15 
  5  5  5  5  5 15 15 15 15 15 15 15 15 15 15 15 15 15 
 
+
 SAT
-Total time: 60
+Total time: 133
 --------------------------------
 10x18 416.in
 Kich thuoc ma tran: 10x18
@@ -1236,8 +1284,10 @@ So luong menh de la: 15675
  7 10 10 10 10 10 10 10 10  7 10  5  5  5  5  5  5 10 
  7  7  7  7  7  7  7  7  7  7 10 10 10 10 10 10 10 10 
 
+
+
 SAT
-Total time: 90
+Total time: 129
 --------------------------------
 10x18 417.in
 Kich thuoc ma tran: 10x18
@@ -1267,8 +1317,9 @@ So luong menh de la: 18702
  2 12 12 12  2  1  2  2  2  1  1  1  1  3  3  3  3  6 
  2  2  2  2  2  1  1  1  1  1  6  6  6  6  6  6  6  6 
 
+
 SAT
-Total time: 248
+Total time: 236
 --------------------------------
 11x11 120.in
 Kich thuoc ma tran: 11x11
@@ -1300,8 +1351,9 @@ So luong menh de la: 11565
 11  5  5  5  5 11  3  4  4  3 12 
 11 11 11 11 11 11  3  3  3  3 12 
 
+
 SAT
-Total time: 40
+Total time: 90
 --------------------------------
 11x11 121.in
 Kich thuoc ma tran: 11x11
@@ -1334,8 +1386,9 @@ So luong menh de la: 8882
  7  9  2  2  2  2  2  2  2  2  2 
 
 
+
 SAT
-Total time: 80
+Total time: 40
 --------------------------------
 11x11 122.in
 Kich thuoc ma tran: 11x11
@@ -1367,8 +1420,10 @@ So luong menh de la: 8309
  6  7  7  5  5  5  5  5  2  5  8 
  6  6  6  6  6  6  6  6  2  5  8 
 
+
+
 SAT
-Total time: 30
+Total time: 49
 --------------------------------
 11x11 123.in
 Kich thuoc ma tran: 11x11
@@ -1400,8 +1455,9 @@ So luong menh de la: 11566
  9 11  6  6  6  6  6  6  6 12  7 
  9  9  7  7  7  7  7  7  7  7  7 
 
+
 SAT
-Total time: 100
+Total time: 195
 --------------------------------
 11x11 124.in
 Kich thuoc ma tran: 11x11
@@ -1433,8 +1489,9 @@ So luong menh de la: 11521
 11 12 12 12  1  1  1  1  1  1 11 
 11 11 11 11 11 11 11 11 11 11 11 
 
+
 SAT
-Total time: 50
+Total time: 46
 --------------------------------
 11x11 130.in
 Kich thuoc ma tran: 11x11
@@ -1466,8 +1523,10 @@ So luong menh de la: 9835
  8  9 10 10 10 10  8  7  1  3  7 
  8  8  8  8  8  8  8  7  7  7  7 
 
+
+
 SAT
-Total time: 30
+Total time: 29
 --------------------------------
 11x11 131.in
 Kich thuoc ma tran: 11x11
@@ -1499,8 +1558,9 @@ So luong menh de la: 12605
  1  5  5  5  5  4  4  4  4  6  1 
  1  1  1  1  1  1  1  1  1  1  1 
 
+
 SAT
-Total time: 90
+Total time: 30
 --------------------------------
 11x11 132.in
 Kich thuoc ma tran: 11x11
@@ -1532,8 +1592,9 @@ So luong menh de la: 10892
  3  5  4  4  4  4  4  4  4  4  3 
  3  3  3  3  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 40
+Total time: 44
 --------------------------------
 11x11 133.in
 Kich thuoc ma tran: 11x11
@@ -1565,8 +1626,10 @@ So luong menh de la: 9854
 10  4  4  4  4  4  4  5  5  5 10 
 10 10 10 10 10 10 10 10 10 10 10 
 
+
+
 SAT
-Total time: 40
+Total time: 33
 --------------------------------
 11x11 134.in
 Kich thuoc ma tran: 11x11
@@ -1598,8 +1661,9 @@ So luong menh de la: 11566
  1  2  2  2  2  2 10  6  6  6 10 
  1  1  1  1  1  2 10 10 10 10 10 
 
+
 SAT
-Total time: 40
+Total time: 44
 --------------------------------
 11x11 135.in
 Kich thuoc ma tran: 11x11
@@ -1631,8 +1695,9 @@ So luong menh de la: 11431
  1 12 12 12 12 12 12 12 12 12  1 
  1  1  1  1  1  1  1  1  1  1  1 
 
+
 SAT
-Total time: 50
+Total time: 38
 --------------------------------
 11x11 136.in
 Kich thuoc ma tran: 11x11
@@ -1664,8 +1729,9 @@ So luong menh de la: 8237
  5  5  5  5  5  5  5  5  5  5  8 
  8  8  8  8  8  8  8  8  8  8  8 
 
+
 SAT
-Total time: 40
+Total time: 26
 --------------------------------
 11x11 137.in
 Kich thuoc ma tran: 11x11
@@ -1697,8 +1763,9 @@ So luong menh de la: 11767
  8  7  7  7  7  7  7  7 12  6  5 
  8  8  8  8  8  8  8  8  6  6  5 
 
+
 SAT
-Total time: 70
+Total time: 42
 --------------------------------
 11x11 138.in
 Kich thuoc ma tran: 11x11
@@ -1730,8 +1797,9 @@ So luong menh de la: 11566
  1  5  5  5  1  8  9  8  8  8  7 
  1  1  1  1  1  8  8  8  7  7  7 
 
+
 SAT
-Total time: 40
+Total time: 46
 --------------------------------
 11x11 139.in
 Kich thuoc ma tran: 11x11
@@ -1764,8 +1832,9 @@ So luong menh de la: 8882
  1  1  6  6  6  6  6  6  6  6  6 
 
 
+
 SAT
-Total time: 60
+Total time: 25
 --------------------------------
 11x11 140.in
 Kich thuoc ma tran: 11x11
@@ -1797,8 +1866,9 @@ So luong menh de la: 11745
  6  7  3  5  5  5  5  5  5  2  3 
  7  7  3  3  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 90
+Total time: 45
 --------------------------------
 11x11 141.in
 Kich thuoc ma tran: 11x11
@@ -1831,8 +1901,9 @@ So luong menh de la: 8898
  8  8  8  8  8  8  8  8  8  8  8 
 
 
+
 SAT
-Total time: 40
+Total time: 52
 --------------------------------
 11x11 142.in
 Kich thuoc ma tran: 11x11
@@ -1863,6 +1934,8 @@ So luong menh de la: 9780
  7 10  1  1  1  1  1  1  1  1  7 
  7 10 10 10 10 10 10 10 10 10  7 
  7  7  7  7  7  7  7  7  7  7  7 
+
+
 
 SAT
 Total time: 60
@@ -1897,8 +1970,10 @@ So luong menh de la: 8997
  7  4  6  6  6  6  6  6  6  6  9 
  7  7  7  7  7  7  7  7  7  6  6 
 
+
+
 SAT
-Total time: 40
+Total time: 57
 --------------------------------
 11x11 144.in
 Kich thuoc ma tran: 11x11
@@ -1930,8 +2005,10 @@ So luong menh de la: 9780
  6  8 10 10 10 10 10 10 10 10  6 
  6  6  6  6  6  6  6  6  6  6  6 
 
+
+
 SAT
-Total time: 50
+Total time: 41
 --------------------------------
 11x11 145.in
 Kich thuoc ma tran: 11x11
@@ -1963,8 +2040,10 @@ So luong menh de la: 9872
  7  8  8  8  8  8  6  6  6  6  6 
  7  7  7  7  7  7  7  7  7  7  6 
 
+
+
 SAT
-Total time: 30
+Total time: 36
 --------------------------------
 12x12 120.in
 Kich thuoc ma tran: 12x12
@@ -1998,8 +2077,9 @@ So luong menh de la: 16916
 10 11 12 13 13 13  7  7  7  7  7  8 
 10 11 12 12 12 12  8  8  8  8  8  8 
 
+
 SAT
-Total time: 70
+Total time: 67
 --------------------------------
 12x12 121.in
 Kich thuoc ma tran: 12x12
@@ -2033,8 +2113,10 @@ So luong menh de la: 12127
  4 10 10  6  6  6  6 10  1  9  9  1 
  4  4 10 10 10 10 10 10  1  1  1  1 
 
+
+
 SAT
-Total time: 130
+Total time: 122
 --------------------------------
 12x12 122.in
 Kich thuoc ma tran: 12x12
@@ -2068,8 +2150,9 @@ So luong menh de la: 15723
  9 11 11  2  2  2  2  2  2 11 11  3 
  9  9 11 11 11 11 11 11 11 11  3  3 
 
+
 SAT
-Total time: 80
+Total time: 38
 --------------------------------
 12x12 123.in
 Kich thuoc ma tran: 12x12
@@ -2103,8 +2186,10 @@ So luong menh de la: 13460
 10  2  8 11 11 11  1  1  1  1  1  8 
  2  2  8  8  8  8  8  8  8  8  8  8 
 
+
+
 SAT
-Total time: 50
+Total time: 46
 --------------------------------
 12x12 124.in
 Kich thuoc ma tran: 12x12
@@ -2138,8 +2223,9 @@ So luong menh de la: 15650
  8  4  4  4  4  4  4 11  8  8  8 10 
  8  8  8  8  8  8  8  8  8 10 10 10 
 
+
 SAT
-Total time: 60
+Total time: 38
 --------------------------------
 12x12 130.in
 Kich thuoc ma tran: 12x12
@@ -2173,8 +2259,9 @@ So luong menh de la: 15649
  8  6  9  9 13 13 13 13  3  3  3  6 
  8  6  6  6  6  6  6  6  6  6  6  6 
 
+
 SAT
-Total time: 70
+Total time: 42
 --------------------------------
 12x12 131.in
 Kich thuoc ma tran: 12x12
@@ -2208,8 +2295,10 @@ So luong menh de la: 12219
  6  5  5  5  5  5  5  5  6  6  6  9 
  6  6  6  6  6  6  6  6  6  9  9  9 
 
+
+
 SAT
-Total time: 80
+Total time: 138
 --------------------------------
 12x12 132.in
 Kich thuoc ma tran: 12x12
@@ -2243,8 +2332,9 @@ So luong menh de la: 15478
  5  4  4  4  4  4  4  4  4  4  4  5 
  5  5  5  5  5  5  5  5  5  5  5  5 
 
+
 SAT
-Total time: 70
+Total time: 51
 --------------------------------
 12x12 133.in
 Kich thuoc ma tran: 12x12
@@ -2278,8 +2368,9 @@ So luong menh de la: 15356
  1 13 13 13  1  2 11 11 11 11 10  2 
  1  1  1  1  1  2  2  2  2  2  2  2 
 
+
 SAT
-Total time: 30
+Total time: 40
 --------------------------------
 12x12 134.in
 Kich thuoc ma tran: 12x12
@@ -2313,8 +2404,10 @@ So luong menh de la: 14657
  8  9 10 10 11 11 11 11 11 11  9  7 
  8  9 10 11 11  9  9  9  9  9  9  7 
 
+
+
 SAT
-Total time: 110
+Total time: 99
 --------------------------------
 12x12 135.in
 Kich thuoc ma tran: 12x12
@@ -2348,8 +2441,10 @@ So luong menh de la: 13399
  4  3  3  6  6  6  6  6  6  6  6  4 
  4  4  4  4  4  4  4  4  4  4  4  4 
 
+
+
 SAT
-Total time: 40
+Total time: 35
 --------------------------------
 12x12 136.in
 Kich thuoc ma tran: 12x12
@@ -2383,8 +2478,9 @@ So luong menh de la: 14432
  6  5  5  5  8  7  7  7  7  7  6  2 
  6  6  6  6  6  6  6  6  6  6  6  2 
 
+
 SAT
-Total time: 80
+Total time: 69
 --------------------------------
 12x12 137.in
 Kich thuoc ma tran: 12x12
@@ -2418,8 +2514,10 @@ So luong menh de la: 13481
  3  2 11  9 10 10 10 10  2  2  2  1 
  3  2  2  2  2  2  2  2  2  1  1  1 
 
+
+
 SAT
-Total time: 40
+Total time: 39
 --------------------------------
 12x12 138.in
 Kich thuoc ma tran: 12x12
@@ -2453,8 +2551,10 @@ So luong menh de la: 13481
  3  4  4  5  5  5 10 10 10 10 10  3 
  3  3  3  3  3  3  3  3  3  3  3  3 
 
+
+
 SAT
-Total time: 30
+Total time: 53
 --------------------------------
 12x12 139.in
 Kich thuoc ma tran: 12x12
@@ -2488,8 +2588,10 @@ So luong menh de la: 14410
  2 12 12 12 12  4  4  4  3  3  4  3 
  2  2  2  2  2  2  2  2  2  3  3  3 
 
+
+
 SAT
-Total time: 150
+Total time: 187
 --------------------------------
 12x12 140.in
 Kich thuoc ma tran: 12x12
@@ -2523,8 +2625,10 @@ So luong menh de la: 13338
  1  3  3  3  3  3  3  3  3  3  3  1 
  1  1  1  1  1  1  1  1  1  1  1  1 
 
+
+
 SAT
-Total time: 50
+Total time: 48
 --------------------------------
 12x12 141.in
 Kich thuoc ma tran: 12x12
@@ -2558,8 +2662,10 @@ So luong menh de la: 13542
  3  8 11 11  2  2  6  6  6  6  6  5 
  3  3  5  5  5  5  5  5  5  5  5  5 
 
+
+
 SAT
-Total time: 50
+Total time: 69
 --------------------------------
 12x12 142.in
 Kich thuoc ma tran: 12x12
@@ -2594,8 +2700,9 @@ So luong menh de la: 11002
  9  9  9  9  9  9  9  9  9  9  9  9 
 
 
+
 SAT
-Total time: 30
+Total time: 35
 --------------------------------
 12x12 143.in
 Kich thuoc ma tran: 12x12
@@ -2629,8 +2736,9 @@ So luong menh de la: 16783
  4  3 11 11 11 11 11 11 14 14  4 12 
  4  4  4  4  4  4  4  4  4  4  4 12 
 
+
 SAT
-Total time: 40
+Total time: 34
 --------------------------------
 12x12 144.in
 Kich thuoc ma tran: 12x12
@@ -2664,8 +2772,10 @@ So luong menh de la: 12219
  4  7  7  7  7  7  5  5  5  5  5  4 
  4  4  4  4  4  4  4  4  4  4  4  4 
 
+
+
 SAT
-Total time: 30
+Total time: 32
 --------------------------------
 12x12 145.in
 Kich thuoc ma tran: 12x12
@@ -2699,8 +2809,10 @@ So luong menh de la: 13420
  1  3  3  3  3  3  3  3  1  4  4  2 
  1  1  1  1  1  1  1  1  1  4  2  2 
 
+
+
 SAT
-Total time: 50
+Total time: 31
 --------------------------------
 12x15 39.in
 Kich thuoc ma tran: 12x15
@@ -2734,8 +2846,9 @@ So luong menh de la: 23539
 15 14 14 14 14 14  9 11 11 11 12 12 12 12  9 
 15 15 15 15 15 15  9  9  9  9  9  9  9  9  9 
 
+
 SAT
-Total time: 110
+Total time: 51
 --------------------------------
 12x15 43.in
 Kich thuoc ma tran: 12x15
@@ -2769,8 +2882,9 @@ So luong menh de la: 20471
 11 11 11 11 11 11 11 11 11  3  2 13 13 13  2 
  3  3  3  3  3  3  3  3  3  3  2  2  2  2  2 
 
+
 SAT
-Total time: 140
+Total time: 72
 --------------------------------
 12x15 45.in
 Kich thuoc ma tran: 12x15
@@ -2804,8 +2918,10 @@ So luong menh de la: 15755
  3  4  4  4  4  5  8  3  6  8  7  6  4  2  4 
  3  3  3  3  3  3  3  3  6  6  6  6  4  4  4 
 
+
+
 SAT
-Total time: 80
+Total time: 45
 --------------------------------
 12x15 46.in
 Kich thuoc ma tran: 12x15
@@ -2839,8 +2955,10 @@ So luong menh de la: 17486
  1  3  1  2  1  1  1  1  1  1  1  1  1  2  3 
  1  1  1  2  2  2  2  2  2  2  2  2  2  2  3 
 
+
+
 SAT
-Total time: 50
+Total time: 60
 --------------------------------
 12x23 210.in
 Kich thuoc ma tran: 12x23
@@ -2874,8 +2992,9 @@ So luong menh de la: 60721
 20 12 12 12 12 12 24 24 24 24 24 24 18 18 18 18 18 18 20 17  1  1 17 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 17 17 17 17 
 
+
 SAT
-Total time: 120
+Total time: 203
 --------------------------------
 13x13 120.in
 Kich thuoc ma tran: 13x13
@@ -2911,8 +3030,10 @@ So luong menh de la: 19165
  1  8  8  8  8  1  8 11 11 11 11 11  8 
  1  1  1  1  1  1  8  8  8  8  8  8  8 
 
+
+
 SAT
-Total time: 40
+Total time: 35
 --------------------------------
 13x13 121.in
 Kich thuoc ma tran: 13x13
@@ -2948,8 +3069,10 @@ So luong menh de la: 17453
  1  3  3  3  7  7  7  7  7  1  2 10  2 
  1  1  1  1  1  1  1  1  1  1  2  2  2 
 
+
+
 SAT
-Total time: 60
+Total time: 61
 --------------------------------
 13x13 122.in
 Kich thuoc ma tran: 13x13
@@ -2986,8 +3109,9 @@ So luong menh de la: 14729
  9  9  9  9  9  9  9  9  7  7  7  7  7 
 
 
+
 SAT
-Total time: 130
+Total time: 139
 --------------------------------
 13x13 123.in
 Kich thuoc ma tran: 13x13
@@ -3023,8 +3147,9 @@ So luong menh de la: 20586
  3  2  2 11 13 13 13  7  7  7  7  7  3 
  3  3  3  3  3  3  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 40
+Total time: 36
 --------------------------------
 13x13 124.in
 Kich thuoc ma tran: 13x13
@@ -3060,8 +3185,10 @@ So luong menh de la: 19018
  4  5  5  5  5  5 11 11 11 11 11 11  3 
  4  4  4  4  4  3  3  3  3  3  3  3  3 
 
+
+
 SAT
-Total time: 60
+Total time: 84
 --------------------------------
 13x13 130.in
 Kich thuoc ma tran: 13x13
@@ -3097,8 +3224,10 @@ So luong menh de la: 19091
  9 10 13 10 11 12 12 11  5  5  5  5  6 
  9 10 10 10 11 11 11 11  6  6  6  6  6 
 
+
+
 SAT
-Total time: 890
+Total time: 91
 --------------------------------
 13x13 131.in
 Kich thuoc ma tran: 13x13
@@ -3134,8 +3263,10 @@ So luong menh de la: 17633
  5  8  8  8  9  9  9  9  9  9  9  9  8 
  5  5  5  8  8  8  8  8  8  8  8  8  8 
 
+
+
 SAT
-Total time: 140
+Total time: 44
 --------------------------------
 13x13 132.in
 Kich thuoc ma tran: 13x13
@@ -3171,8 +3302,9 @@ So luong menh de la: 20560
  2  8  8  8  1 10  1  1  1  1  1  1 10 
  2  2  2  2  2 10 10 10 10 10 10 10 10 
 
+
 SAT
-Total time: 130
+Total time: 70
 --------------------------------
 13x13 133.in
 Kich thuoc ma tran: 13x13
@@ -3208,8 +3340,10 @@ So luong menh de la: 17543
  3 10 10 10 10 10  4  4  4 10 10 10  4 
  3  3  3  3  3 10 10 10 10 10  4  4  4 
 
+
+
 SAT
-Total time: 70
+Total time: 37
 --------------------------------
 13x13 134.in
 Kich thuoc ma tran: 13x13
@@ -3245,8 +3379,10 @@ So luong menh de la: 16253
  3 10  3  7  8  8 11 11 11 11 11 11  8 
  3  3  3  7  7  8  8  8  8  8  8  8  8 
 
+
+
 SAT
-Total time: 190
+Total time: 135
 --------------------------------
 13x13 135.in
 Kich thuoc ma tran: 13x13
@@ -3282,8 +3418,10 @@ So luong menh de la: 17431
  9 10 10 10 10  9  2  2  2  2  2  2  6 
  9  9  9  9  9  9  6  6  6  6  6  6  6 
 
+
+
 SAT
-Total time: 100
+Total time: 140
 --------------------------------
 13x13 136.in
 Kich thuoc ma tran: 13x13
@@ -3319,8 +3457,10 @@ So luong menh de la: 18945
 12 11 11 11 11 11 11 11 10 10 10 10 12 
 12 12 12 12 12 12 12 12 12 12 12 12 12 
 
+
+
 SAT
-Total time: 120
+Total time: 81
 --------------------------------
 13x13 137.in
 Kich thuoc ma tran: 13x13
@@ -3356,8 +3496,10 @@ So luong menh de la: 18945
  3  4  4  3  3  3 11  9 10 10  8  8  9 
  3  3  3  3 11 11 11  9  9  9  9  9  9 
 
+
+
 SAT
-Total time: 180
+Total time: 105
 --------------------------------
 13x13 138.in
 Kich thuoc ma tran: 13x13
@@ -3393,8 +3535,9 @@ So luong menh de la: 20507
  3  5  5  5  5  5  5  8  8  8  8  4  3 
  3  3  3  3  3  3  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 80
+Total time: 84
 --------------------------------
 13x13 139.in
 Kich thuoc ma tran: 13x13
@@ -3430,8 +3573,9 @@ So luong menh de la: 21824
  1  2  3  3 12 12  5  5  5  5  5  5 12 
  1  2  2  2  2 12 12 12 12 12 12 12 12 
 
+
 SAT
-Total time: 120
+Total time: 124
 --------------------------------
 13x13 140.in
 Kich thuoc ma tran: 13x13
@@ -3467,8 +3611,10 @@ So luong menh de la: 17880
  4  5  5  5  5  5  5  5  5  5  6  7  8 
  4  4  4  4  4  4  4  4  4  5  6  7  8 
 
+
+
 SAT
-Total time: 60
+Total time: 46
 --------------------------------
 13x13 141.in
 Kich thuoc ma tran: 13x13
@@ -3504,8 +3650,10 @@ So luong menh de la: 16458
  5  4  4  4  4  4  6  6  6  6  6  6  5 
  5  5  5  5  5  5  5  5  5  5  5  5  5 
 
+
+
 SAT
-Total time: 60
+Total time: 38
 --------------------------------
 13x13 142.in
 Kich thuoc ma tran: 13x13
@@ -3541,8 +3689,10 @@ So luong menh de la: 16171
  7 11 11 11 11 11  3  3  3  3  3  3  7 
  7  7  7  7  7  7  7  7  7  7  7  7  7 
 
+
+
 SAT
-Total time: 90
+Total time: 87
 --------------------------------
 13x13 143.in
 Kich thuoc ma tran: 13x13
@@ -3578,8 +3728,10 @@ So luong menh de la: 16253
  9  7  7  7  7  7  4  4  4  9  7  4  7 
  9  9  9  9  9  9  9  9  9  9  7  7  7 
 
+
+
 SAT
-Total time: 70
+Total time: 59
 --------------------------------
 13x13 144.in
 Kich thuoc ma tran: 13x13
@@ -3615,8 +3767,9 @@ So luong menh de la: 21995
 10  8  8  8  8  8  4  4  4  4 11 11 13 
 10 10 10 10 10 10 10 10 10 10 10 11 11 
 
+
 SAT
-Total time: 80
+Total time: 46
 --------------------------------
 13x13 145.in
 Kich thuoc ma tran: 13x13
@@ -3652,8 +3805,9 @@ So luong menh de la: 20613
 12  9  9  9  9  9  9  9 10 10 10 10 12 
 12 12 12 12 12 12 12 12 12 12 12 12 12 
 
+
 SAT
-Total time: 50
+Total time: 62
 --------------------------------
 14x14 120.in
 Kich thuoc ma tran: 14x14
@@ -3691,8 +3845,10 @@ So luong menh de la: 24656
  2  5  5 14  9  9  9  9  9  9  9  9 13  5 
  2  2  5  5  5  5  5  5  5  5  5  5  5  5 
 
+
+
 SAT
-Total time: 200
+Total time: 189
 --------------------------------
 14x14 121.in
 Kich thuoc ma tran: 14x14
@@ -3730,8 +3886,9 @@ So luong menh de la: 26399
  9  7  7  7  9  2  2  2  2  2  7  7  7  2 
  9  9  9  9  9  6  6  6  6  2  2  2  2  2 
 
+
 SAT
-Total time: 190
+Total time: 178
 --------------------------------
 14x14 122.in
 Kich thuoc ma tran: 14x14
@@ -3769,8 +3926,9 @@ So luong menh de la: 26370
 14 12 12 12 12 12 12 12 12 14 13 15 14 10 
 14 14 14 14 14 14 14 14 14 14 13 14 14 10 
 
+
 SAT
-Total time: 290
+Total time: 332
 --------------------------------
 14x14 123.in
 Kich thuoc ma tran: 14x14
@@ -3808,8 +3966,10 @@ So luong menh de la: 22679
  1  5  5  5  5  5  5  5 13 13 13 13 13  1 
  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
 
+
+
 SAT
-Total time: 180
+Total time: 145
 --------------------------------
 14x14 124.in
 Kich thuoc ma tran: 14x14
@@ -3847,8 +4007,10 @@ So luong menh de la: 24629
 14 11 12 12  3  3  3  3  3  3  3  3  3 14 
 14 11 11 11 14 14 14 14 14 14 14 14 14 14 
 
+
+
 SAT
-Total time: 80
+Total time: 64
 --------------------------------
 14x14 130.in
 Kich thuoc ma tran: 14x14
@@ -3886,8 +4048,10 @@ So luong menh de la: 22947
  9 12 11 10  8  8  7  7  5  4  4  6  2  3 
  9  8  8  8  8  7  7  6  6  6  6  6  2  3 
 
+
+
 SAT
-Total time: 70
+Total time: 46
 --------------------------------
 14x14 131.in
 Kich thuoc ma tran: 14x14
@@ -3925,8 +4089,9 @@ So luong menh de la: 26399
  8 10 10 10 10 10 10  8  8  8  8  8  8  9 
  8  8  8  8  8  8  8  8  9  9  9  9  9  9 
 
+
 SAT
-Total time: 110
+Total time: 51
 --------------------------------
 14x14 132.in
 Kich thuoc ma tran: 14x14
@@ -3964,8 +4129,10 @@ So luong menh de la: 27154
  3  8  8  8  8  8  8 12 12 12  8  8  8  3 
  3  3  3  3  3  3  3  3  3  3  3  3  3  3 
 
+
+
 SAT
-Total time: 60
+Total time: 70
 --------------------------------
 14x14 133.in
 Kich thuoc ma tran: 14x14
@@ -4003,8 +4170,10 @@ So luong menh de la: 26849
  2 12 11 12 12 12 12  8  8  8  8  8  8  2 
  2  2  2  2  2  2  2  2  2  2  2  2  2  2 
 
+
+
 SAT
-Total time: 90
+Total time: 46
 --------------------------------
 14x14 134.in
 Kich thuoc ma tran: 14x14
@@ -4042,8 +4211,9 @@ So luong menh de la: 26313
  3  5  2  2  5  6  7  7  7  7  7  7  7  6 
  3  5  5  5  5  6  6  6  6  6  6  6  6  6 
 
+
 SAT
-Total time: 50
+Total time: 70
 --------------------------------
 14x14 135.in
 Kich thuoc ma tran: 14x14
@@ -4081,8 +4251,10 @@ So luong menh de la: 21099
  1 10 10 10 10 10 10 10 12  1  1  1  2  3 
  1  1  1  1  1  1  1  1  1  1  2  2  2  3 
 
+
+
 SAT
-Total time: 160
+Total time: 156
 --------------------------------
 14x14 136.in
 Kich thuoc ma tran: 14x14
@@ -4120,8 +4292,10 @@ So luong menh de la: 21054
  5  7  7  7  7  7  7  7  5  5  5  5  5 12 
  5  5  5  5  5  5  5  5  5 12 12 12 12 12 
 
+
+
 SAT
-Total time: 1211
+Total time: 106
 --------------------------------
 14x14 137.in
 Kich thuoc ma tran: 14x14
@@ -4159,8 +4333,9 @@ So luong menh de la: 26228
  4  5  5  5  5  5  4  3  8  8  8  8  8  3 
  4  4  4  4  4  4  4  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 590
+Total time: 106
 --------------------------------
 14x14 138.in
 Kich thuoc ma tran: 14x14
@@ -4198,8 +4373,9 @@ So luong menh de la: 26598
 12 15 15 12 13 14 14 14 14 14 14 14 14 12 
 12 12 12 12 13 12 12 12 12 12 12 12 12 12 
 
+
 SAT
-Total time: 1790
+Total time: 165
 --------------------------------
 14x14 139.in
 Kich thuoc ma tran: 14x14
@@ -4237,8 +4413,10 @@ So luong menh de la: 24920
  5  5  6  6  6  6  7 12 13 13 13 13 13 12 
  5  7  7  7  7  7  7 12 12 12 12 12 12 12 
 
+
+
 SAT
-Total time: 1150
+Total time: 78
 --------------------------------
 14x14 140.in
 Kich thuoc ma tran: 14x14
@@ -4276,8 +4454,10 @@ So luong menh de la: 27123
 12 13 13 13 13 16 16 16 16 16 14 15  2 15 
 13 13 14 14 14 14 14 14 14 14 14 15 15 15 
 
+
+
 SAT
-Total time: 1110
+Total time: 84
 --------------------------------
 14x14 141.in
 Kich thuoc ma tran: 14x14
@@ -4315,8 +4495,10 @@ So luong menh de la: 26819
 14  7  7  7  7  7  7  7 15 15 15 15 15  7 
 14 14 14 14 14 14 14  7  7  7  7  7  7  7 
 
+
+
 SAT
-Total time: 1140
+Total time: 66
 --------------------------------
 14x14 142.in
 Kich thuoc ma tran: 14x14
@@ -4354,8 +4536,9 @@ So luong menh de la: 26456
  2 11 10 10 10 10  9  9  9  9  9  9  9 10 
  2 11 11 11 11 10 10 10 10 10 10 10 10 10 
 
+
 SAT
-Total time: 610
+Total time: 86
 --------------------------------
 14x14 143.in
 Kich thuoc ma tran: 14x14
@@ -4393,8 +4576,9 @@ So luong menh de la: 26143
 12  1  1  1  1  6 14  8  8  8 12  4 10  4 
 12 12 12 12 12 12 12 12 12 12 12  4  4  4 
 
+
 SAT
-Total time: 910
+Total time: 100
 --------------------------------
 14x14 144.in
 Kich thuoc ma tran: 14x14
@@ -4432,8 +4616,10 @@ So luong menh de la: 21054
  4  6 12  4  2  7 10  2  2  2  2  2  2  2 
  4  4  4  4  2  2  2  2  1  1  1  1  1  1 
 
+
+
 SAT
-Total time: 890
+Total time: 64
 --------------------------------
 14x14 145.in
 Kich thuoc ma tran: 14x14
@@ -4471,8 +4657,10 @@ So luong menh de la: 27092
 14 14 14 14 14  4  9  9  9  9 16 16 10  2 
  4  4  4  4  4  4 16 16 16 16 16 10 10  2 
 
+
+
 SAT
-Total time: 1430
+Total time: 147
 --------------------------------
 14x24 105.in
 Kich thuoc ma tran: 14x24
@@ -4510,8 +4698,9 @@ So luong menh de la: 70896
 20 13 13 13 14 14 14 14 14 16 16 16 16 16 16 16 16 16 16 16 16 16 13  4 
 20 20 20 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13  4 
 
+
 SAT
-Total time: 6234
+Total time: 544
 --------------------------------
 14x24 110.in
 Kich thuoc ma tran: 14x24
@@ -4549,8 +4738,10 @@ So luong menh de la: 63690
 19 14 14 14 14 14 14 14 14 14  2  2  2 19 19 19 19 19  2  2 12 12 12 13 
 19 19 19 19 19 19 19 19 19 19 19 19 19 19 13 13 13 13 13 13 13 13 13 13 
 
+
+
 SAT
-Total time: 8840
+Total time: 814
 --------------------------------
 14x24 113.in
 Kich thuoc ma tran: 14x24
@@ -4588,8 +4779,9 @@ So luong menh de la: 77365
  8  3 10 10 10 10 10 10 10 10 10 10 10 10  3 10 14 14 14 14 14 14 14 10 
  8  3  3  3  3  3  3  3  3  3  3  3  3  3  3 10 10 10 10 10 10 10 10 10 
 
+
 SAT
-Total time: 15651
+Total time: 1852
 --------------------------------
 14x24 117.in
 Kich thuoc ma tran: 14x24
@@ -4627,8 +4819,10 @@ So luong menh de la: 61441
  5 19 19 19 19 19 19 19  1  1 11 11 11 11 11 11  1  4 12 12 12 12 12  4 
  5  5  5  5  5  5  5  5  5  1  1  1  1  1  1  1  1  4  4  4  4  4  4  4 
 
+
+
 SAT
-Total time: 2251
+Total time: 1710
 --------------------------------
 14x24 129.in
 Kich thuoc ma tran: 14x24
@@ -4666,8 +4860,10 @@ So luong menh de la: 63805
 12 15 15 15 15 15 15 12 12 12  7 20  2  2  2  2 13 13 13 13 13 13 13 20 
 12 12 12 12 12 12 12 12  7  7  7 20 20 20 20 20 20 20 20 20 20 20 20 20 
 
+
+
 SAT
-Total time: 340
+Total time: 257
 --------------------------------
 14x24 139.in
 Kich thuoc ma tran: 14x24
@@ -4705,8 +4901,10 @@ So luong menh de la: 63921
  7 16 16 16 16 16 16 16 16 16 16 16 13 13 13 13 13 13 13  7  9  9  9 12 
  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7 12 12 12 12 
 
+
+
 SAT
-Total time: 5360
+Total time: 2762
 --------------------------------
 14x24 147.in
 Kich thuoc ma tran: 14x24
@@ -4744,8 +4942,9 @@ So luong menh de la: 66990
  6 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15  2 15 15 15  3  3  3  6 
  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6 
 
+
 SAT
-Total time: 1460
+Total time: 1006
 --------------------------------
 14x24 148.in
 Kich thuoc ma tran: 14x24
@@ -4783,8 +4982,10 @@ So luong menh de la: 49165
  4  9  7  7  7  7  7  7  7  7  7  7  7  7 12  8  8  8  8  5  5  5  5  3 
  9  9  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3 
 
+
+
 SAT
-Total time: 320
+Total time: 313
 --------------------------------
 14x24 157.in
 Kich thuoc ma tran: 14x24
@@ -4822,8 +5023,10 @@ So luong menh de la: 50842
 16 16 16 16 16  4 13 13 13 13 13 13 13 13 13 13 13 13 13  6  6  6  6  6 
 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12  6 
 
+
+
 SAT
-Total time: 2810
+Total time: 1808
 --------------------------------
 14x24 169.in
 Kich thuoc ma tran: 14x24
@@ -4861,8 +5064,51 @@ So luong menh de la: 49023
 11 15  6  6  6  6  6  6  6  6  6  6  6 11  7 14 14 14 14 14 14 14 14  7 
 11 11 11 11 11 11 11 11 11 11 11 11 11 11  7  7  7  7  7  7  7  7  7  7 
 
+
+
 SAT
-Total time: 27746
+Total time: 8901
+--------------------------------
+14x24 179.in
+Kich thuoc ma tran: 14x24
+Gia tri lon nhat: 13
+
+So luong bien la: 5298
+So luong menh de la: 42054
+4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 3 0 13 0 0 0 0 0 0 10 0 0 0 0 0 0  
+0 0 0 8 1 0 0 0 9 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0  
+0 0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 0 0 0 0 11 0 12 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 7 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11 5 4  
+0 0 13 0 0 0 0 0 0 3 0 0 0 0 9 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+ 4  4  4  2  2  7  7  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9 
+ 2  2  4  2  2  7  7  9  3  3 13 10 10 10 10 10 10 10 11 11 11 11 11  9 
+ 2  2  4  8  1  1  1  9  9  3 13 10 11 11 11 11 11 11 11  2  2  2 11  9 
+ 4  4  4  8  5  5  1  7  7  3 13 10 11 10 10 10 10 10 10 10 10  2 11  9 
+ 4 13 13  8  5  5  1  1  7  3 13 10 11 10 11 11 11 11 11 11 10 12 11  9 
+ 4 13 13  8  6  6  6  1  7  3 13 10 11 11 11 10 10 10 10 10 10 12 11  9 
+ 4  6  6  8  6  1  6  1  7  3 13 10 10 10 10 10  8  8 12 12 12 12 11  9 
+ 4  6  6  8  6  1  6  1  7  3 13  8  8  8  8  8  8 12 12 11 11 11 11  9 
+ 4  8  8  8  6  1  6  1  7  3 13  8 12 12 12 12 12 12 11 11  9  9  9  9 
+ 4  8  7  7  6  1  1  1  7  3 13  8 12 11 11 11 11 11 11  9  9 11  5  4 
+ 4  8 13  7  7  7  7  7  7  3 13  8 12 11  9  9  9  9  9  9 11 11  5  4 
+ 4  8 13 13 13 13 13 13 13 13 13  8 12 11 11 11 11 11 11 11 11 12  5  4 
+ 4  8  8  8  8  8  8  8  8  8  8  8 12 12 12 12 12 12 12 12 12 12  5  4 
+ 4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4 
+
+
+
+SAT
+Total time: 28721
 --------------------------------
 14x24 188.in
 Kich thuoc ma tran: 14x24
@@ -4900,8 +5146,9 @@ So luong menh de la: 71278
 13  4  4  4  4  4  4  4  4  4  4  4  4  4  7 13 13 13 14 21 20 20 20 20 
 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 14 14 14 21 21 21 21 21 
 
+
 SAT
-Total time: 1230
+Total time: 434
 --------------------------------
 14x24 189.in
 Kich thuoc ma tran: 14x24
@@ -4939,8 +5186,9 @@ So luong menh de la: 80640
 23 25 25 25 25 25 25 25 23 24 25 25 25 25 25 26 26 26 26 26 26 26 26 24 
 23 23 23 23 23 23 23 23 23 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 
 
+
 SAT
-Total time: 1520
+Total time: 1108
 --------------------------------
 14x24 199.in
 Kich thuoc ma tran: 14x24
@@ -4978,8 +5226,10 @@ So luong menh de la: 38445
 10  2  2  2  2  2  2  2  2 10  7  3  3  3  3  3  3  3  3  3  3 10  3 10 
 10 10 10 10 10 10 10 10 10 10  7  7  7  7  7  7  7  7  7  7  7 10 10 10 
 
+
+
 SAT
-Total time: 14448
+Total time: 5219
 --------------------------------
 14x24 200.in
 Kich thuoc ma tran: 14x24
@@ -5017,8 +5267,10 @@ So luong menh de la: 45830
 13 14 14 14 14 14 14 14 14 13  7  9  9  9  9  9  9  9  9  9  9  9  9  7 
 13 13 13 13 13 13 13 13 13 13  7  7  7  7  7  7  7  7  7  7  7  7  7  7 
 
+
+
 SAT
-Total time: 39948
+Total time: 15518
 --------------------------------
 14x24 208.in
 Kich thuoc ma tran: 14x24
@@ -5056,8 +5308,10 @@ So luong menh de la: 63767
  2 20 20  3 12 14 14 14 14 14 14 14 14 14 14 14 12  8  6  6  1  1  1  8 
  2  2 20  3 12 12 12 12 12 12 12 12 12 12 12 12 12  8  8  8  8  8  8  8 
 
+
+
 SAT
-Total time: 420
+Total time: 336
 --------------------------------
 14x24 209.in
 Kich thuoc ma tran: 14x24
@@ -5095,8 +5349,10 @@ So luong menh de la: 45883
  7  2  2  2  2  2  2  2  2  2  4  4  4  4  4  4  4  4  4  4  4  4  4  7 
  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7 
 
+
+
 SAT
-Total time: 9290
+Total time: 2037
 --------------------------------
 14x24 218.in
 Kich thuoc ma tran: 14x24
@@ -5134,8 +5390,10 @@ So luong menh de la: 64036
 14 18 18 18 18 15 15 15 15 15 15  3  3  3 18 13 18 18 18 18 12 12 12 18 
 14 14 14 14 18 18 18 18 18 18 18 18 18 18 18 13 13 13 13 18 18 18 18 18 
 
+
+
 SAT
-Total time: 6420
+Total time: 1881
 --------------------------------
 14x24 219.in
 Kich thuoc ma tran: 14x24
@@ -5173,8 +5431,10 @@ So luong menh de la: 48994
  6  9  9  9  9  9  9  6  5 10 10 10 10 10 10 10 10 10 13 13 13 13  5  3 
  6  6  6  6  6  6  6  6  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  3 
 
+
+
 SAT
-Total time: 1140
+Total time: 875
 --------------------------------
 14x24 418.in
 Kich thuoc ma tran: 14x24
@@ -5212,8 +5472,10 @@ So luong menh de la: 57957
 10 16 17 17 17 17 17 15 15 15 15  2  2  2  2 18 18 18 18 18 18 12 12 12 
 10 16 16 16 16 16 16 16 16 16 15 15 15 15  2  2  2  2  2  2  2  2  2  2 
 
+
+
 SAT
-Total time: 390
+Total time: 308
 --------------------------------
 14x24 419.in
 Kich thuoc ma tran: 14x24
@@ -5251,8 +5513,50 @@ So luong menh de la: 77040
  8 15 15 15 15 15 17 17 17 17 17  8  4 17 17 17  4 22  3  3  3  3  3 22 
  8  8  8  8  8  8  8  8  8  8  8  8  4  4  4  4  4 22 22 22 22 22 22 22 
 
+
 SAT
-Total time: 5046
+Total time: 789
+--------------------------------
+14x24 420.in
+Kich thuoc ma tran: 14x24
+Gia tri lon nhat: 14
+
+So luong bien la: 5628
+So luong menh de la: 45856
+7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0  
+0 3 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0  
+0 0 0 0 0 12 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 8 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 4 7 6 0 0 0 0 0 0 0 0 6 0  
+0 5 0 0 0 0 0 0 0 0 11 13 14 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 11 0 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 1 0  
+0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 0 10 0 0 0 0 0 0  
+0 0 0 10 0 0 0 0 13 0 0 0 0 0 0 0 0 0 0 3 0 0 0 14  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+ 7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7 
+ 8  8  8  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  7 
+ 8  3  8  4  2  2  2  2  2  2  2  2  7  7  7  7  7  7  7  7  7  7  7  7 
+ 8  3  8  4  4  4  4  4  4  4  4  2  7  6  6  6  9  9  9  9  9  9  9  9 
+ 8  3  8  8  8 12 12 12 12 12  4  2  7  6  1  6  6  6  6  6  6  6  6  9 
+ 8  3  3  3  8  8  8  8  8 12  4  2  7  6  1  1  1  1  1  1  1  1  6  9 
+ 8  8  8  3 12 12 12 12 12 12  4  4  7  6 14 14 14 14 14 14 14  1  6  9 
+ 5  5  8  3 12 11 11 11 11 11 11 13 14 14 14  5  5  5  5  5 14  1  1  9 
+ 5  8  8  3 12 11 12 12 12 12 12 13  5  5  5  5 13 13 13  5 14 14  1  9 
+ 5  8  3  3 12 12 12 10 10 10 12 13 13 13 13 13 13 10 13  5  5 14  9  9 
+ 5  8  3 10 10 10 10 10 13 10 10 10 10 10 10 10 10 10 13  3  5 14  9 14 
+ 5  8  3  3  3  3  3  3 13 13 13 13 13 13 13 13 13 13 13  3  5 14  9 14 
+ 5  8  8  8  8  8  8  3  3  3  3  3  3  3  3  3  3  3  3  3  5 14  9 14 
+ 5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5 14 14 14 
+
+
+
+SAT
+Total time: 20383
 --------------------------------
 15x15 120.in
 Kich thuoc ma tran: 15x15
@@ -5292,8 +5596,10 @@ So luong menh de la: 32150
 13 11 15 15 15 15 11 16 16 16 16 10 11  9 11 
 13 11 11 11 11 11 11 16 10 10 10 10 11 11 11 
 
+
+
 SAT
-Total time: 1080
+Total time: 303
 --------------------------------
 15x15 121.in
 Kich thuoc ma tran: 15x15
@@ -5333,8 +5639,10 @@ So luong menh de la: 26778
  9  9  9  9  9  9 11 10 10 13 11  2  2  2 11 
 10 10 10 10 10 10 10 10 13 13 11 11 11 11 11 
 
+
+
 SAT
-Total time: 210
+Total time: 65
 --------------------------------
 15x15 122.in
 Kich thuoc ma tran: 15x15
@@ -5374,8 +5682,10 @@ So luong menh de la: 31005
  9  2  2  2  2  2  9  9  9 11  4 13 13 12  4 
  9  9  9  9  9  9  9 11 11 11  4  4  4  4  4 
 
+
+
 SAT
-Total time: 820
+Total time: 455
 --------------------------------
 15x15 123.in
 Kich thuoc ma tran: 15x15
@@ -5415,8 +5725,10 @@ So luong menh de la: 31906
 14 14 14 14 14 14 10  1 16 16 16 16 16 16  1 
 10 10 10 10 10 10 10  1  1  1  1  1  1  1  1 
 
+
+
 SAT
-Total time: 490
+Total time: 291
 --------------------------------
 15x15 124.in
 Kich thuoc ma tran: 15x15
@@ -5456,8 +5768,10 @@ So luong menh de la: 30705
 11 12 12 12 12 11  9 14 14 14 14 14 13 13  9 
 11 11 11 11 11 11  9  9  9  9  9  9  9  9  9 
 
+
+
 SAT
-Total time: 290
+Total time: 235
 --------------------------------
 15x15 130.in
 Kich thuoc ma tran: 15x15
@@ -5497,8 +5811,10 @@ So luong menh de la: 31033
  5  5  2  1 14 14  2  2  2  2 15 15 15 15 14 
  5  2  2  1  1 14 14 14 14 14 14 14 14 14 14 
 
+
+
 SAT
-Total time: 90
+Total time: 75
 --------------------------------
 15x15 131.in
 Kich thuoc ma tran: 15x15
@@ -5538,8 +5854,10 @@ So luong menh de la: 31784
  9 10 10 10 10 10 11 11 11 11 11  9  9  4  5 
  9  9  9  9  9  9  9  9  9  9  9  9  5  5  5 
 
+
+
 SAT
-Total time: 150
+Total time: 126
 --------------------------------
 15x15 132.in
 Kich thuoc ma tran: 15x15
@@ -5579,8 +5897,10 @@ So luong menh de la: 31906
  6  6  6  5  6  3 16 16 16 16 16 16 16 16  3 
  5  5  5  5  6  3  3  3  3  3  3  3  3  3  3 
 
+
+
 SAT
-Total time: 250
+Total time: 218
 --------------------------------
 15x15 133.in
 Kich thuoc ma tran: 15x15
@@ -5620,8 +5940,10 @@ So luong menh de la: 31754
  3  5  5  5  6 13 13 13 13  3  7  9  9  9  7 
  3  3  3  3  3  3  3  3  3  3  7  7  7  7  7 
 
+
+
 SAT
-Total time: 260
+Total time: 103
 --------------------------------
 15x15 134.in
 Kich thuoc ma tran: 15x15
@@ -5661,8 +5983,10 @@ So luong menh de la: 29125
  7  6  6  6  6  6  6  6 13 10  8  8  8  8 10 
  7  7 13 13 13 13 13 13 13 10 10 10 10 10 10 
 
+
+
 SAT
-Total time: 150
+Total time: 102
 --------------------------------
 15x15 135.in
 Kich thuoc ma tran: 15x15
@@ -5702,8 +6026,10 @@ So luong menh de la: 31906
  4  8 12 12 12 12 12 12  8  8  8  8  7  7 16 
  4  8  8  8  8  8  8  8  8 16 16 16 16 16 16 
 
+
+
 SAT
-Total time: 90
+Total time: 82
 --------------------------------
 15x15 136.in
 Kich thuoc ma tran: 15x15
@@ -5743,8 +6069,10 @@ So luong menh de la: 32058
  3  4  5  5  5  5  7 13 13 13 13 13 13 13  7 
  3  4  4  4  4  4  7  7  7  7  7  7  7  7  7 
 
+
+
 SAT
-Total time: 1260
+Total time: 1065
 --------------------------------
 15x15 137.in
 Kich thuoc ma tran: 15x15
@@ -5784,8 +6112,10 @@ So luong menh de la: 32119
 10 16 16 10 10 12 10 13 13 13 13 13 13 13  3 
 10 10 10 10 12 12 10 10 10 10 10 10 10 10 10 
 
+
+
 SAT
-Total time: 300
+Total time: 342
 --------------------------------
 15x15 138.in
 Kich thuoc ma tran: 15x15
@@ -5825,8 +6155,10 @@ So luong menh de la: 31906
  7  9  9  9  9  9  9  9 13 13 13  4  6  5  6 
  7  7  7  7  7  7  7  7 13  6  6  6  6  5  5 
 
+
+
 SAT
-Total time: 290
+Total time: 263
 --------------------------------
 15x15 139.in
 Kich thuoc ma tran: 15x15
@@ -5866,8 +6198,10 @@ So luong menh de la: 30948
 10 11 11 11 11 11 10 12 12 12 12  3  3  3  2 
 10 10 10 10 10 10 10 12  2  2  2  2  2  2  2 
 
+
+
 SAT
-Total time: 420
+Total time: 454
 --------------------------------
 15x15 140.in
 Kich thuoc ma tran: 15x15
@@ -5907,8 +6241,10 @@ So luong menh de la: 31967
 11 15 16 16 16 16 13 13 13 13 13 13 13  2 15 
 11 15 15 15 15 15 15 15 15 15 15 15 15 15 15 
 
+
+
 SAT
-Total time: 90
+Total time: 102
 --------------------------------
 15x15 141.in
 Kich thuoc ma tran: 15x15
@@ -5948,8 +6284,10 @@ So luong menh de la: 31967
 14 15 15 15 15 15 14 14 14 14 14 16 10 10  3 
 14 14 14 14 14 14 14 16 16 16 16 16 10  3  3 
 
+
+
 SAT
-Total time: 180
+Total time: 128
 --------------------------------
 15x15 142.in
 Kich thuoc ma tran: 15x15
@@ -5989,8 +6327,10 @@ So luong menh de la: 31815
  9  8  8 10 10 10 10 10 10 10  8 12 15  7  6 
  9  9  8  8  8  8  8  8  8  8  8 12 12  6  6 
 
+
+
 SAT
-Total time: 130
+Total time: 110
 --------------------------------
 15x15 143.in
 Kich thuoc ma tran: 15x15
@@ -6030,8 +6370,10 @@ So luong menh de la: 32241
  1  6 10 10  6  2  5  5  2  4  9 11 11 11  4 
  1  6  6  6  6  2  2  2  2  4  4  4  4  4  4 
 
+
+
 SAT
-Total time: 2370
+Total time: 291
 --------------------------------
 15x15 144.in
 Kich thuoc ma tran: 15x15
@@ -6071,8 +6413,10 @@ So luong menh de la: 32059
  2  4  4  4  9  9  9  9  9  2  2  2  3  3 11 
  2  2  2  2  2  2  2  2  2  2  3  3  3 11 11 
 
+
+
 SAT
-Total time: 4169
+Total time: 216
 --------------------------------
 15x15 145.in
 Kich thuoc ma tran: 15x15
@@ -6112,8 +6456,10 @@ So luong menh de la: 31175
 10  2  2  2  2  2 10 10 10 10 10  1  1  4  9 
 10 10 10 10 10 10 10  4  4  4  4  4  4  4  9 
 
+
+
 SAT
-Total time: 710
+Total time: 71
 --------------------------------
 15x20 308.in
 Kich thuoc ma tran: 15x20
@@ -6153,8 +6499,11 @@ So luong menh de la: 34035
  6  1 11 11 11 11 11 11 11 11 11 11 11 11  2  2  2  6  6  3 
  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  3  3 
 
+
+
+
 SAT
-Total time: 4060
+Total time: 1653
 --------------------------------
 15x20 309.in
 Kich thuoc ma tran: 15x20
@@ -6195,8 +6544,10 @@ So luong menh de la: 31586
  1  1  1  1  1  9  9  9  9  9  9  9  2  2  2  2  2  2  2  2 
 
 
+
+
 SAT
-Total time: 35279
+Total time: 16641
 --------------------------------
 15x20 310.in
 Kich thuoc ma tran: 15x20
@@ -6236,8 +6587,10 @@ So luong menh de la: 43191
 15  9  9  9  4  4  4  4  4 15 14 12  6  6  6  6  6  6  6 12 
 15 15 15 15 15 15 15 15 15 15 14 12 12 12 12 12 12 12 12 12 
 
+
+
 SAT
-Total time: 48056
+Total time: 6042
 --------------------------------
 15x20 317.in
 Kich thuoc ma tran: 15x20
@@ -6277,8 +6630,10 @@ So luong menh de la: 43020
 12  7  7  7  7 11 11 11 11 11 11 11 11 11 12  4 11 11 10  4 
 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12  4  4  4  4  4 
 
+
+
 SAT
-Total time: 3680
+Total time: 375
 --------------------------------
 15x20 318.in
 Kich thuoc ma tran: 15x20
@@ -6318,8 +6673,96 @@ So luong menh de la: 43077
 15  4  8  8  8  8 15  3 13 13 13 13  2  1  1  1  3  1  7  1 
 15 15 15 15 15 15 15  3  3  3  3  3  3  3  3  3  3  1  1  1 
 
+
+
 SAT
-Total time: 8770
+Total time: 2928
+--------------------------------
+15x20 319.in
+Kich thuoc ma tran: 15x20
+Gia tri lon nhat: 14
+
+So luong bien la: 5016
+So luong menh de la: 40300
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 13 0 0 0 0 0 0 0 0 0 0 0 0 0 4 1 6 12 0  
+0 0 11 0 0 1 0 0 9 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 5 0 0 0 7 0 0 0 0 0 0 0  
+0 2 0 0 0 0 0 0 0 0 0 0 0 10 3 0 0 0 0 0  
+0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 13 0 0 0 0 6 0 0 0 0 0 4 0 0 0 0 0  
+0 0 0 9 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0  
+0 0 0 0 14 0 0 0 0 0 11 0 0 0 0 0 0 0 0 0  
+0 0 5 8 0 0 0 0 0 0 7 0 0 0 14 0 10 0 0 0  
+0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 3 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+11 11 11 11 11  1  1  1  1  1  1  1  1  1  1  1  1  6  6  6 
+11 13 13 13 11  1 11 11 11 11  4  4  4  4  4  4  1  6 12  6 
+11 11 11 13 11  1 11  9  9 11  4 12 12 12 12 12 12 12 12  6 
+14 14 14 13 11 11 11  9  5 11  4 12  7  7  7  7  7  7  7  6 
+14  2 14 13  9  9  9  9  5 11  4 12 12 10  3  3  3  3  7  6 
+14  2 14 13  9  8  8  8  5 11  4  4 12 10 10 10 10  3  7  6 
+14  2 14 13  9  8  5  5  5 11 11  4 12 12 12 12 10  3  7  6 
+14  2 14 13  9  8  5 14 14 14 11  4  4  4  4 12 10  3  7  6 
+14  2 14 13  9  8  5 14  6 14 11 11 11 11  4 12 10  3  7  6 
+14  2 14  9  9  8  5 14  6 14 14 14 14 11 12 12 10  3  7  6 
+14  2 14 14 14  8  5 14  6  6 11 11 14 11 11 11 10  3  7  6 
+14  2  5  8  8  8  5 14 14  6  7 11 14 14 14 11 10  3  7  6 
+14  2  5  5  5  5  5  2 14  6  7 11 11 11 11 11  3  3  7  6 
+14  2  2  2  2  2  2  2 14  6  7  7  7  7  7  7  7  7  7  6 
+14 14 14 14 14 14 14 14 14  6  6  6  6  6  6  6  6  6  6  6 
+
+
+
+SAT
+Total time: 23649
+--------------------------------
+15x20 320.in
+Kich thuoc ma tran: 15x20
+Gia tri lon nhat: 14
+
+So luong bien la: 5016
+So luong menh de la: 40379
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0  
+0 0 0 0 0 0 12 0 0 0 0 5 0 0 3 0 0 0 0 0  
+0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0  
+0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 10 0 0 3 14 0 7 0 11 13 0 0  
+0 0 0 0 12 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0  
+0 0 10 0 0 9 0 0 0 0 0 4 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 14 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0 0  
+0 0 0 0 0 13 0 0 0 0 0 0 0 0 0 7 0 0 0 0  
+0 0 0 8 0 0 0 0 0 0 0 1 11 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+ 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 6  6  8  8  8  8  8  8  8  8  8  8  8 13 13 13 13 13  2  1 
+ 6  8  8 12 12 12 12  5  5  5  5  5  8 13  3  3  3 13  2  1 
+ 6  8  4 12  5  5  5  5  8  8  8  8  8 13 13 13  3 13  2  1 
+ 6  8  4 12  5  8  8  8  8  9  9  9  9  9  9 13  3 13  2  1 
+ 6  8  4 12  5  8  9  9  9  9 13 13 13 13 13 13  3 13  2  1 
+ 6  8  4 12  5  5  9  4  4  4 13  3  3  3  3  3  3 13  2  1 
+ 6  8  4 12 12  9  9  4 10  4 13  3 14 14  7 11 11 13  2  1 
+ 6  8  4  4 12  9  4  4 10  4 13 13 13 14  7 11  2  2  2  1 
+ 6  8 10  4  4  9  4 10 10  4  4  4 13 14  7 11 11 11 11  1 
+ 6  8 10 10  4  4  4 10 13 13 13 13 13 14  7  7  7  7 11  1 
+ 6  8 14 10 10 10 10 10 13 14 14 14 14 14  6  6  6  7 11  1 
+ 6  8 14 14 14 13 13 13 13 14  6  6  6  6  6  7  7  7 11  1 
+ 6  8  8  8 14 14 14 14 14 14  6  1 11 11 11 11 11 11 11  1 
+ 6  6  6  6  6  6  6  6  6  6  6  1  1  1  1  1  1  1  1  1 
+
+
+
+SAT
+Total time: 17743
 --------------------------------
 17x17 100.in
 Kich thuoc ma tran: 17x17
@@ -6363,8 +6806,11 @@ So luong menh de la: 32668
  3  7  7  7  7  3  5 12 12 12 12 12  5  5  5  5  4 
  3  3  3  3  3  3  5  5  5  5  5  5  5  4  4  4  4 
 
+
+
+
 SAT
-Total time: 48851
+Total time: 10146
 --------------------------------
 17x17 104.in
 Kich thuoc ma tran: 17x17
@@ -6408,8 +6854,10 @@ So luong menh de la: 53858
  7 14 14 14 14 14 14 14 14 14 14  7 15  8 15 15 11 
  7  7  7  7  7  7  7  7  7  7  7  7 15 15 15 11 11 
 
+
+
 SAT
-Total time: 8170
+Total time: 1277
 --------------------------------
 17x17 109.in
 Kich thuoc ma tran: 17x17
@@ -6453,8 +6901,10 @@ So luong menh de la: 51698
  2 17 17 17 17 17 17 17 17 10 10 10 10 10 10 10  2 
  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2 
 
+
+
 SAT
-Total time: 37254
+Total time: 8224
 --------------------------------
 17x17 112.in
 Kich thuoc ma tran: 17x17
@@ -6498,8 +6948,10 @@ So luong menh de la: 56390
  5  4  4  4  4  4  4  4  4  4  4  4  4 18 18 18  5 
  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5 
 
+
+
 SAT
-Total time: 1450
+Total time: 100
 --------------------------------
 17x17 116.in
 Kich thuoc ma tran: 17x17
@@ -6543,8 +6995,10 @@ So luong menh de la: 48438
 14 13 13 13 13 13 13 13 16 16 16 16 14  1 14  7 15 
 14 14 14 14 14 14 14 14 14 14 14 14 14  1  1  1  1 
 
+
+
 SAT
-Total time: 7967
+Total time: 3740
 --------------------------------
 17x17 120.in
 Kich thuoc ma tran: 17x17
@@ -6588,8 +7042,11 @@ So luong menh de la: 35535
 11  4  4  4  4  4  4  4  4  4  2  2  2  2  2  2 11 
 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
 
+
+
+
 SAT
-Total time: 38073
+Total time: 14092
 --------------------------------
 17x17 128.in
 Kich thuoc ma tran: 17x17
@@ -6633,8 +7090,11 @@ So luong menh de la: 35829
 13  2  2  2  2  2  2  2  2 11 11 11 11 12  9  6 11 
 13 13 13 13 13 13 13 13  2  2  2  2 11 11 11 11 11 
 
+
+
+
 SAT
-Total time: 1260
+Total time: 905
 --------------------------------
 17x17 136.in
 Kich thuoc ma tran: 17x17
@@ -6678,8 +7138,10 @@ So luong menh de la: 51989
  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8 
  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6 
 
+
+
 SAT
-Total time: 1600
+Total time: 1272
 --------------------------------
 17x17 138.in
 Kich thuoc ma tran: 17x17
@@ -6723,8 +7185,11 @@ So luong menh de la: 32578
  1  6  1  3 10 12 11 11 11 11 11 11 11 11 11 11 10 
  1  1  1  3 10 10 10 10 10 10 10 10 10 10 10 10 10 
 
+
+
+
 SAT
-Total time: 18682
+Total time: 5788
 --------------------------------
 17x17 165.in
 Kich thuoc ma tran: 17x17
@@ -6768,8 +7233,59 @@ So luong menh de la: 35535
  7  3  3  3  3  3  3  3  3  3  3 11 11 11 11 11  7 
  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7 
 
+
+
+
 SAT
-Total time: 52343
+Total time: 14540
+--------------------------------
+17x17 166.in
+Kich thuoc ma tran: 17x17
+Gia tri lon nhat: 12
+
+So luong bien la: 4263
+So luong menh de la: 32578
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 12 11 3 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 0 0  
+0 0 4 0 0 0 0 0 0 0 0 0 0 1 0 0 0  
+0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 1  
+0 0 0 0 0 0 0 0 12 0 0 0 0 0 0 0 0  
+0 0 0 0 0 11 0 0 0 0 0 0 9 0 0 0 0  
+0 0 0 0 0 8 0 0 0 0 0 0 3 0 0 0 0  
+0 0 0 0 0 0 0 5 10 5 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 10 0 6 0 0 0  
+0 0 0 0 0 0 6 0 0 0 0 0 0 2 0 0 0  
+0 4 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+ 9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9 
+ 9  7  7  7  7  7  7  7  7 12 12 12 12 12 11  3  9 
+ 9  7  2  2  2  2  2  2  7 12 11 11 11 11 11  3  9 
+ 9  7  2  7  7  7  7  2  7 12 11  3  3  3  3  3  9 
+ 9  7  7  7  9  9  7  2  7 12 11  3  9  9  9  9  9 
+ 9  4  4  9  9  7  7  2  7 12 11  3  9  1  1  1  1 
+ 9  4  9  9  7  7  2  2  7 12 11  3  9  2  2  2  1 
+ 9  4  9  2  2  2  2  7  7 12 11  3  9  2  8  2  1 
+ 9  4  9  2  7  7  7  7 12 12 11  3  9  2  8  2  2 
+ 9  4  9  2  7 11 11 11 11 11 11  3  9  2  8  8  2 
+ 9  4  9  2  7  8  6  6  6  6  6  3  3  2  2  8  2 
+ 9  4  9  2  7  8  6  5 10  5  6  6  6  6  2  8  2 
+ 9  4  9  2  7  8  6  5 10  5  5  5  5  6  2  8  2 
+ 9  4  9  2  7  8  6  5 10 10 10 10  5  6  2  8  2 
+ 9  4  9  2  7  8  6  5  5  5  5  5  5  2  2  8  2 
+ 9  4  9  2  7  8  8  8  8  8  8  8  8  8  8  8  2 
+ 9  9  9  2  2  2  2  2  2  2  2  2  2  2  2  2  2 
+
+
+
+
+SAT
+Total time: 32253
 --------------------------------
 17x17 167.in
 Kich thuoc ma tran: 17x17
@@ -6813,8 +7329,10 @@ So luong menh de la: 71219
  4 13  4  8  2 12 12 14 14 14  2 22 17 17 17 17 17 
  4  4  4  8  2  2  2  2  2  2  2 17 17 21 21 21 21 
 
+
+
 SAT
-Total time: 1850
+Total time: 285
 --------------------------------
 17x17 168.in
 Kich thuoc ma tran: 17x17
@@ -6858,8 +7376,9 @@ So luong menh de la: 76935
  1  1  3 10 17 17 17 17 11 11 11 10 10 29 14 25 20 
  1  3  3 10 10 10 10 10 10 10 10 10 14 14 14 20 20 
 
+
 SAT
-Total time: 1630
+Total time: 498
 --------------------------------
 17x17 176.in
 Kich thuoc ma tran: 17x17
@@ -6904,8 +7423,11 @@ So luong menh de la: 24331
  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9 
 
 
+
+
+
 SAT
-Total time: 43099
+Total time: 17951
 --------------------------------
 17x17 177.in
 Kich thuoc ma tran: 17x17
@@ -6949,8 +7471,10 @@ So luong menh de la: 59890
 11  1  1  1  1  1  1  1  1  9  1  1  9  9  9  9  1 
 11 11 11 11 11 11 11 11 11  9  9  1  1  1  1  1  1 
 
+
+
 SAT
-Total time: 17508
+Total time: 8085
 --------------------------------
 17x17 178.in
 Kich thuoc ma tran: 17x17
@@ -6994,8 +7518,10 @@ So luong menh de la: 65857
  1  9  9  9  9  9  9  9  9  9 15 15 15 15 15 23 23 
  1  1  1  1  1  1  1  1  1  1  1 16 16 16 15 15 23 
 
+
+
 SAT
-Total time: 21295
+Total time: 7723
 --------------------------------
 17x17 187.in
 Kich thuoc ma tran: 17x17
@@ -7040,8 +7566,10 @@ So luong menh de la: 30209
  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8  8 
 
 
+
+
 SAT
-Total time: 8630
+Total time: 2678
 --------------------------------
 17x17 188.in
 Kich thuoc ma tran: 17x17
@@ -7085,8 +7613,11 @@ So luong menh de la: 32623
  2 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11  2 
  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2 
 
+
+
+
 SAT
-Total time: 841
+Total time: 435
 --------------------------------
 17x17 197.in
 Kich thuoc ma tran: 17x17
@@ -7130,8 +7661,60 @@ So luong menh de la: 32668
  7 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12  7 
  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7 
 
+
+
+
 SAT
-Total time: 17688
+Total time: 8674
+--------------------------------
+17x17 198.in
+Kich thuoc ma tran: 17x17
+Gia tri lon nhat: 10
+
+So luong bien la: 3697
+So luong menh de la: 27021
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 1 0 0 0 0 0 0 4 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 4 0 0 2 0 0 0 2 0 0 0 0  
+0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 7 0 0 0 0 0 0 0 0 7 0 0 0 0 0  
+0 1 0 0 0 0 0 0 0 0 0 0 10 0 0 0 0  
+0 0 0 0 0 0 0 8 0 0 0 0 5 0 0 8 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 3 0 0 5 0 0 0 0  
+0 0 0 9 0 10 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 9 0 0 0 0 0 3 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+
+ 5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5 
+ 5  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  5 
+ 5  7  1  4  4  4  4  4  4  4  6  6  6  6  6  7  5 
+ 5  7  1  4  6  6  6  6  6  6  6 10 10 10  6  7  5 
+ 5  7  1  4  6  4  4  2  2 10 10 10  2 10  6  7  5 
+ 5  7  1  4  6  6  4  2 10 10  2  2  2 10  6  7  5 
+ 5  7  1  4  4  4  4  2 10  2  2 10 10 10  6  7  5 
+ 5  7  1  1  2  2  2  2 10  2 10 10  7  7  7  7  5 
+ 5  7  7  1  2 10 10 10 10  2 10  7  7  5  5  5  5 
+ 5  1  1  1  2 10  2  2  2  2 10 10 10  5  3  3  3 
+ 5  2  2  2  2 10  2  8  8  8  8  8  5  5  3  8  3 
+ 5  2 10 10 10 10  2  2  5  5  5  8  8  8  3  8  3 
+ 5  2 10  9  9  9  9  2  5  3  5  5  5  8  3  8  3 
+ 5  2 10  9 10 10  9  2  5  3  8  8  8  8  3  8  3 
+ 5  2 10 10 10  9  9  2  5  3  8  3  3  3  3  8  3 
+ 5  2  2  2  2  2  2  2  5  3  8  8  8  8  8  8  3 
+ 5  5  5  5  5  5  5  5  5  3  3  3  3  3  3  3  3 
+
+
+
+
+
+SAT
+Total time: 28293
 --------------------------------
 17x17 250.in
 Kich thuoc ma tran: 17x17
@@ -7175,8 +7758,9 @@ So luong menh de la: 85844
  1  8  8  8  8  1  7 23 23 23 23 23  7 24  1 27 27 
  1  1  1  1  1  1  7  7  7  7  7  7  7 24  1  1 27 
 
+
 SAT
-Total time: 6925
+Total time: 1092
 --------------------------------
 17x17 260.in
 Kich thuoc ma tran: 17x17
@@ -7220,8 +7804,9 @@ So luong menh de la: 86876
 22 12 12 24 24 24 24 24 24 24 12 12 11 11 17 17 28 
 22 22 12 12 12 12 12 12 12 12 12 11 11 17 17 28 28 
 
+
 SAT
-Total time: 5240
+Total time: 702
 --------------------------------
 17x17 270.in
 Kich thuoc ma tran: 17x17
@@ -7265,8 +7850,9 @@ So luong menh de la: 77161
 13  2  2  2  2  2  2  2  1 10 10  1  3  3  3  3  1 
 13 13 13 13 13 13 13 13  1  1 10  1  1  1  1  1  1 
 
+
 SAT
-Total time: 8990
+Total time: 6226
 --------------------------------
 17x17 429.in
 Kich thuoc ma tran: 17x17
@@ -7310,8 +7896,58 @@ So luong menh de la: 51807
  3  1  1  2  2  3  2  4  5  2  7  6  6  7 14  1 14 
  3  3  3  3  3  3  2  2  2  2  7  7  7  7 14 14 14 
 
+
+
 SAT
-Total time: 430
+Total time: 214
+--------------------------------
+17x17 439.in
+Kich thuoc ma tran: 17x17
+Gia tri lon nhat: 12
+
+So luong bien la: 4263
+So luong menh de la: 32713
+0 0 0 0 0 0 10 1 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0 0  
+0 0 0 0 4 0 0 0 0 0 0 0 0 5 0 0 0  
+0 0 11 0 0 0 3 0 0 0 0 0 0 4 0 0 0  
+0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0  
+0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 8 0 0 0 0 0 1 2 3 0 0 0 0 12 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+0 6 0 0 0 0 0 0 8 9 0 0 0 0 0 12 0  
+0 0 0 0 0 0 10 0 0 0 0 11 0 0 0 0 0  
+
+10 10 10 10 10 10 10  1 11 11 11 11 11 11 11 11 11 
+10  1  1  1  1  1  1  1 11  6  6  6  6  6  6  6 11 
+10  1 11 11 11 11 11 11 11  6  9  9  9  9  9  6 11 
+10  1 11  5  5  5  5  5  5  6  6  6  6  6  9  6 11 
+10  1 11  5  4  4  4  4  5  5  5  5  5  5  9  6 11 
+10  1 11  5  5  5  3  4  4  4  4  4  4  4  9  6 11 
+10  1  1  1  7  5  3  3  3  3  3  3  9  9  9  6 11 
+10  2  2  1  7  5  7  7  7  7  7  3  9  6  6  6 11 
+10  8  2  1  7  5  7  1  2  3  7  3  9  6 12 12 11 
+10  8  2  1  7  5  7  1  2  3  7  3  9  6  6 12 11 
+10  8  2  1  7  5  7  1  2  3  7  3  9  9  6 12 11 
+10  8  2  1  7  7  7  1  2  3  7  3  3  9  6 12 11 
+10  8  2  1  1  1  1  1  2  3  7  7  3  9  6 12 11 
+10  8  2  2  2  2  2  2  2  3  3  3  3  9  6 12 11 
+10  8  8  8  8  8  8  8  8  9  9  9  9  9  6 12 11 
+10  6  6  6  6  6  6  6  8  9  6  6  6  6  6 12 11 
+10 10 10 10 10 10 10  6  6  6  6 11 11 11 11 11 11 
+
+
+
+
+SAT
+Total time: 23157
 --------------------------------
 17x17 449.in
 Kich thuoc ma tran: 17x17
@@ -7355,8 +7991,11 @@ So luong menh de la: 45676
 16 16 16 10 10 10 10 10 10 10 10 10 15 14  2  2  2 
 15 15 15 15 15 15 15 15 15 15 15 15 15 14 14 14 14 
 
+
+
+
 SAT
-Total time: 17365
+Total time: 4679
 --------------------------------
 20x20 430.in
 Kich thuoc ma tran: 20x20
@@ -7406,8 +8045,10 @@ So luong menh de la: 100550
 17 17 17 13 13 18 18 18 18 18 26 26 26 26 26 25 26  2  2  2 
 26 26 26 26 26 26 26 26 26 26 26 25 25 25 25 25 26 26 26 26 
 
+
+
 SAT
-Total time: 32320
+Total time: 3990
 --------------------------------
 6x6 120.in
 Kich thuoc ma tran: 6x6
@@ -7431,7 +8072,7 @@ So luong menh de la: 970
 
 
 SAT
-Total time: 1660
+Total time: 292
 --------------------------------
 6x6 121.in
 Kich thuoc ma tran: 6x6
@@ -7454,7 +8095,7 @@ So luong menh de la: 1310
  5  5  5  5  5  5 
 
 SAT
-Total time: 10
+Total time: 373
 --------------------------------
 6x6 122.in
 Kich thuoc ma tran: 6x6
@@ -7476,8 +8117,9 @@ So luong menh de la: 1134
  1  3  3  5  4  2 
  1  1  1  2  2  2 
 
+
 SAT
-Total time: 440
+Total time: 3614
 --------------------------------
 6x6 123.in
 Kich thuoc ma tran: 6x6
@@ -7499,8 +8141,9 @@ So luong menh de la: 1201
  1  2  4  5  5  5 
  2  2  4  4  4  5 
 
+
 SAT
-Total time: 10
+Total time: 281
 --------------------------------
 6x6 124.in
 Kich thuoc ma tran: 6x6
@@ -7522,8 +8165,9 @@ So luong menh de la: 1125
  2  5  5  2  3  1 
  2  2  2  2  3  1 
 
+
 SAT
-Total time: 910
+Total time: 2538
 --------------------------------
 6x6 125.in
 Kich thuoc ma tran: 6x6
@@ -7545,8 +8189,9 @@ So luong menh de la: 1151
  5  5  3  5  2  4 
  3  3  3  5  4  4 
 
+
 SAT
-Total time: 10
+Total time: 420
 --------------------------------
 6x6 130.in
 Kich thuoc ma tran: 6x6
@@ -7570,7 +8215,7 @@ So luong menh de la: 970
 
 
 SAT
-Total time: 58139
+Total time: 158
 --------------------------------
 6x6 131.in
 Kich thuoc ma tran: 6x6
@@ -7593,7 +8238,7 @@ So luong menh de la: 1300
  5  5  5  5  5  5 
 
 SAT
-Total time: 5220
+Total time: 268
 --------------------------------
 6x6 132.in
 Kich thuoc ma tran: 6x6
@@ -7615,8 +8260,9 @@ So luong menh de la: 957
  1  4  4  4  4  1 
  1  1  1  1  1  1 
 
+
 SAT
-Total time: 210
+Total time: 293
 --------------------------------
 6x6 133.in
 Kich thuoc ma tran: 6x6
@@ -7639,7 +8285,7 @@ So luong menh de la: 1269
  1  1  1  1  1  1 
 
 SAT
-Total time: 500
+Total time: 134
 --------------------------------
 6x6 134.in
 Kich thuoc ma tran: 6x6
@@ -7662,7 +8308,7 @@ So luong menh de la: 1290
  3  3  3  3  3  3 
 
 SAT
-Total time: 3530
+Total time: 324
 --------------------------------
 6x6 135.in
 Kich thuoc ma tran: 6x6
@@ -7686,7 +8332,7 @@ So luong menh de la: 957
 
 
 SAT
-Total time: 480
+Total time: 490
 --------------------------------
 6x6 136.in
 Kich thuoc ma tran: 6x6
@@ -7710,7 +8356,7 @@ So luong menh de la: 995
 
 
 SAT
-Total time: 10
+Total time: 500
 --------------------------------
 6x6 137.in
 Kich thuoc ma tran: 6x6
@@ -7732,8 +8378,9 @@ So luong menh de la: 1192
  2  1  5  4  4  4 
  1  1  5  5  5  4 
 
+
 SAT
-Total time: 19114
+Total time: 300
 --------------------------------
 6x6 138.in
 Kich thuoc ma tran: 6x6
@@ -7755,8 +8402,9 @@ So luong menh de la: 1176
  1  5  4  2  3  4 
  1  1  2  2  3  3 
 
+
 SAT
-Total time: 10
+Total time: 312
 --------------------------------
 6x6 139.in
 Kich thuoc ma tran: 6x6
@@ -7778,8 +8426,9 @@ So luong menh de la: 1134
  3  4  4  2  2  3 
  3  3  3  3  3  3 
 
+
 SAT
-Total time: 10
+Total time: 504
 --------------------------------
 6x6 140.in
 Kich thuoc ma tran: 6x6
@@ -7802,7 +8451,7 @@ So luong menh de la: 1414
  6  6  6  5  2  2 
 
 SAT
-Total time: 690
+Total time: 308
 --------------------------------
 6x6 141.in
 Kich thuoc ma tran: 6x6
@@ -7826,7 +8475,7 @@ So luong menh de la: 957
 
 
 SAT
-Total time: 431
+Total time: 410
 --------------------------------
 6x6 142.in
 Kich thuoc ma tran: 6x6
@@ -7848,8 +8497,9 @@ So luong menh de la: 1142
  2  4  4  4  3  1 
  2  1  1  1  1  1 
 
+
 SAT
-Total time: 910
+Total time: 3464
 --------------------------------
 6x6 143.in
 Kich thuoc ma tran: 6x6
@@ -7872,7 +8522,7 @@ So luong menh de la: 1320
  2  2  1  1  1  3 
 
 SAT
-Total time: 1640
+Total time: 28
 --------------------------------
 6x6 144.in
 Kich thuoc ma tran: 6x6
@@ -7895,7 +8545,7 @@ So luong menh de la: 1332
  4  4  4  4  4  4 
 
 SAT
-Total time: 10
+Total time: 398
 --------------------------------
 6x6 145.in
 Kich thuoc ma tran: 6x6
@@ -7917,8 +8567,9 @@ So luong menh de la: 1151
  1  3  3  1  1  4 
  1  1  1  1  4  4 
 
+
 SAT
-Total time: 650
+Total time: 124
 --------------------------------
 7x7 120.in
 Kich thuoc ma tran: 7x7
@@ -7942,8 +8593,9 @@ So luong menh de la: 1921
  1  2  2  2  6  6  1 
  1  1  1  1  1  1  1 
 
+
 SAT
-Total time: 10
+Total time: 1728
 --------------------------------
 7x7 121.in
 Kich thuoc ma tran: 7x7
@@ -7968,7 +8620,7 @@ So luong menh de la: 2327
  7  3  3  3  3  3  3 
 
 SAT
-Total time: 480
+Total time: 281
 --------------------------------
 7x7 122.in
 Kich thuoc ma tran: 7x7
@@ -7993,7 +8645,7 @@ So luong menh de la: 2364
  5  5  5  5  5  5  5 
 
 SAT
-Total time: 10
+Total time: 3450
 --------------------------------
 7x7 123.in
 Kich thuoc ma tran: 7x7
@@ -8017,8 +8669,9 @@ So luong menh de la: 1684
  1  4  4  4  4  4  1 
  1  1  1  1  1  1  1 
 
+
 SAT
-Total time: 460
+Total time: 16
 --------------------------------
 7x7 124.in
 Kich thuoc ma tran: 7x7
@@ -8042,8 +8695,9 @@ So luong menh de la: 1994
  4  5  5  6  5  2  6 
  4  4  5  5  5  2  2 
 
+
 SAT
-Total time: 610
+Total time: 181
 --------------------------------
 7x7 130.in
 Kich thuoc ma tran: 7x7
@@ -8068,8 +8722,9 @@ So luong menh de la: 1477
  1  1  3  3  3  3  3 
 
 
+
 SAT
-Total time: 10
+Total time: 150
 --------------------------------
 7x7 131.in
 Kich thuoc ma tran: 7x7
@@ -8093,8 +8748,9 @@ So luong menh de la: 2046
  1  3  3  3  3  3  2 
  1  2  2  2  2  2  2 
 
+
 SAT
-Total time: 10
+Total time: 3285
 --------------------------------
 7x7 132.in
 Kich thuoc ma tran: 7x7
@@ -8119,7 +8775,7 @@ So luong menh de la: 2557
  2  8  8  8  8  8  8 
 
 SAT
-Total time: 20
+Total time: 178
 --------------------------------
 7x7 133.in
 Kich thuoc ma tran: 7x7
@@ -8143,8 +8799,9 @@ So luong menh de la: 2077
  4  3  5  5  5  5  5 
  4  3  3  3  3  3  5 
 
+
 SAT
-Total time: 10
+Total time: 384
 --------------------------------
 7x7 134.in
 Kich thuoc ma tran: 7x7
@@ -8168,8 +8825,9 @@ So luong menh de la: 1726
  1  5  5  5  5  4  1 
  1  1  1  1  1  1  1 
 
+
 SAT
-Total time: 10
+Total time: 448
 --------------------------------
 7x7 135.in
 Kich thuoc ma tran: 7x7
@@ -8194,7 +8852,7 @@ So luong menh de la: 2401
  7  6  6  6  6  6  5 
 
 SAT
-Total time: 1050
+Total time: 513
 --------------------------------
 7x7 136.in
 Kich thuoc ma tran: 7x7
@@ -8220,7 +8878,7 @@ So luong menh de la: 1718
 
 
 SAT
-Total time: 8694
+Total time: 386
 --------------------------------
 7x7 137.in
 Kich thuoc ma tran: 7x7
@@ -8244,8 +8902,9 @@ So luong menh de la: 1743
  2  1  1  1  1  2  5 
  2  2  2  2  2  2  5 
 
+
 SAT
-Total time: 8568
+Total time: 344
 --------------------------------
 7x7 138.in
 Kich thuoc ma tran: 7x7
@@ -8269,8 +8928,9 @@ So luong menh de la: 2015
  2  4  4  4  5  5  1 
  2  2  2  2  1  1  1 
 
+
 SAT
-Total time: 410
+Total time: 158
 --------------------------------
 7x7 139.in
 Kich thuoc ma tran: 7x7
@@ -8294,8 +8954,9 @@ So luong menh de la: 2046
  5  3  2  4  4  4  2 
  3  3  2  2  2  2  2 
 
+
 SAT
-Total time: 10054
+Total time: 322
 --------------------------------
 7x7 140.in
 Kich thuoc ma tran: 7x7
@@ -8319,8 +8980,9 @@ So luong menh de la: 1984
  1  6  1  1  2  2  3 
  1  1  1  3  3  3  3 
 
+
 SAT
-Total time: 10
+Total time: 200
 --------------------------------
 7x7 141.in
 Kich thuoc ma tran: 7x7
@@ -8344,8 +9006,9 @@ So luong menh de la: 1994
  2  1  1  1  5  5  4 
  2  2  2  2  2  2  4 
 
+
 SAT
-Total time: 480
+Total time: 356
 --------------------------------
 7x7 142.in
 Kich thuoc ma tran: 7x7
@@ -8369,8 +9032,9 @@ So luong menh de la: 2015
  2  3  3  3  2  5  6 
  2  2  2  2  2  6  6 
 
+
 SAT
-Total time: 10
+Total time: 300
 --------------------------------
 7x7 143.in
 Kich thuoc ma tran: 7x7
@@ -8395,7 +9059,7 @@ So luong menh de la: 2402
  7  7  7  7  7  1  1 
 
 SAT
-Total time: 940
+Total time: 338
 --------------------------------
 7x7 144.in
 Kich thuoc ma tran: 7x7
@@ -8419,8 +9083,9 @@ So luong menh de la: 2015
  5  1  1  1  1  1  6 
  5  5  5  6  6  6  6 
 
+
 SAT
-Total time: 10
+Total time: 298
 --------------------------------
 7x7 145.in
 Kich thuoc ma tran: 7x7
@@ -8444,8 +9109,9 @@ So luong menh de la: 1983
  1  3  2  6  3  4  5 
  1  3  3  3  3  4  4 
 
+
 SAT
-Total time: 570
+Total time: 316
 --------------------------------
 8x8 120.in
 Kich thuoc ma tran: 8x8
@@ -8471,8 +9137,9 @@ So luong menh de la: 3648
  4  4  1  1  1  7  6  5 
  8  8  8  8  8  6  6  5 
 
+
 SAT
-Total time: 640
+Total time: 316
 --------------------------------
 8x8 121.in
 Kich thuoc ma tran: 8x8
@@ -8499,7 +9166,7 @@ So luong menh de la: 3649
  1  1  1  1  1  1  1  1 
 
 SAT
-Total time: 10
+Total time: 142
 --------------------------------
 8x8 122.in
 Kich thuoc ma tran: 8x8
@@ -8525,8 +9192,9 @@ So luong menh de la: 3764
  8  5  5  7  7  6  6  6 
  8  8  8  8  7  7  7  7 
 
+
 SAT
-Total time: 1190
+Total time: 296
 --------------------------------
 8x8 123.in
 Kich thuoc ma tran: 8x8
@@ -8552,8 +9220,9 @@ So luong menh de la: 3605
  1  8  7  7  7  3  4  7 
  1  8  8  8  7  7  7  7 
 
+
 SAT
-Total time: 760
+Total time: 174
 --------------------------------
 8x8 124.in
 Kich thuoc ma tran: 8x8
@@ -8579,8 +9248,9 @@ So luong menh de la: 2952
  6  1  1  1  4  4  1  5 
  6  6  6  1  1  1  1  5 
 
+
 SAT
-Total time: 470
+Total time: 304
 --------------------------------
 8x8 130.in
 Kich thuoc ma tran: 8x8
@@ -8606,8 +9276,9 @@ So luong menh de la: 2837
  4  2  2  2  3  3  3  4 
  4  4  4  4  4  4  4  4 
 
+
 SAT
-Total time: 480
+Total time: 350
 --------------------------------
 8x8 131.in
 Kich thuoc ma tran: 8x8
@@ -8633,8 +9304,9 @@ So luong menh de la: 3648
  4  8  8  4  2  2  2  2 
  4  4  4  4  3  3  3  3 
 
+
 SAT
-Total time: 3340
+Total time: 27
 --------------------------------
 8x8 132.in
 Kich thuoc ma tran: 8x8
@@ -8660,8 +9332,9 @@ So luong menh de la: 3218
  3  6  5  2  2  2  3  4 
  3  3  3  3  3  3  3  4 
 
+
 SAT
-Total time: 420
+Total time: 298
 --------------------------------
 8x8 133.in
 Kich thuoc ma tran: 8x8
@@ -8687,8 +9360,9 @@ So luong menh de la: 2879
  1  3  3  3  3  4  5  5 
  1  1  1  1  1  4  4  4 
 
+
 SAT
-Total time: 20
+Total time: 396
 --------------------------------
 8x8 134.in
 Kich thuoc ma tran: 8x8
@@ -8714,8 +9388,9 @@ So luong menh de la: 3576
  2  1  2  3  4  4  4  2 
  2  2  2  3  3  3  3  2 
 
+
 SAT
-Total time: 1450
+Total time: 405
 --------------------------------
 8x8 135.in
 Kich thuoc ma tran: 8x8
@@ -8741,8 +9416,9 @@ So luong menh de la: 2827
  1  5  6  3  2  2  2  6 
  1  1  6  6  6  6  6  6 
 
+
 SAT
-Total time: 1340
+Total time: 275
 --------------------------------
 8x8 136.in
 Kich thuoc ma tran: 8x8
@@ -8768,8 +9444,9 @@ So luong menh de la: 3243
  1  2  3  3  3  5  5  3 
  1  2  2  2  3  3  3  3 
 
+
 SAT
-Total time: 10
+Total time: 4947
 --------------------------------
 8x8 137.in
 Kich thuoc ma tran: 8x8
@@ -8795,8 +9472,9 @@ So luong menh de la: 3648
  2  2  2  7  7  6  5  4 
  4  4  4  4  4  4  4  4 
 
+
 SAT
-Total time: 10
+Total time: 326
 --------------------------------
 8x8 138.in
 Kich thuoc ma tran: 8x8
@@ -8823,8 +9501,9 @@ So luong menh de la: 2458
  1  1  1  1  1  1  1  1 
 
 
+
 SAT
-Total time: 440
+Total time: 169
 --------------------------------
 8x8 139.in
 Kich thuoc ma tran: 8x8
@@ -8850,8 +9529,9 @@ So luong menh de la: 3605
  1  3  8  4  4  4  4  3 
  1  3  3  3  3  3  3  3 
 
+
 SAT
-Total time: 10
+Total time: 26
 --------------------------------
 8x8 140.in
 Kich thuoc ma tran: 8x8
@@ -8877,8 +9557,9 @@ So luong menh de la: 3318
  1  3  6  6  6  6  7  2 
  1  3  2  2  2  2  2  2 
 
+
 SAT
-Total time: 240
+Total time: 154
 --------------------------------
 8x8 141.in
 Kich thuoc ma tran: 8x8
@@ -8904,8 +9585,9 @@ So luong menh de la: 3749
  3  3  3  5  4  7  7  2 
  7  7  7  7  7  7  2  2 
 
+
 SAT
-Total time: 18389
+Total time: 439
 --------------------------------
 8x8 142.in
 Kich thuoc ma tran: 8x8
@@ -8931,8 +9613,9 @@ So luong menh de la: 3280
  2  2  2  2  2  7  7  2 
  5  5  5  5  5  5  7  2 
 
+
 SAT
-Total time: 450
+Total time: 547
 --------------------------------
 8x8 143.in
 Kich thuoc ma tran: 8x8
@@ -8958,8 +9641,9 @@ So luong menh de la: 3966
  8  7  7  4  4  4  6  2 
  8  7  9  9  9  9  2  2 
 
+
 SAT
-Total time: 20
+Total time: 5648
 --------------------------------
 8x8 144.in
 Kich thuoc ma tran: 8x8
@@ -8985,8 +9669,9 @@ So luong menh de la: 3330
  5  1  1  1  1  5  6  4 
  5  5  5  5  5  5  6  6 
 
+
 SAT
-Total time: 2980
+Total time: 260
 --------------------------------
 8x8 145.in
 Kich thuoc ma tran: 8x8
@@ -9012,8 +9697,9 @@ So luong menh de la: 3735
  6  8  6  4  4  6  1  3 
  6  6  6  1  1  1  1  3 
 
+
 SAT
-Total time: 800
+Total time: 318
 --------------------------------
 9x9 120.in
 Kich thuoc ma tran: 9x9
@@ -9041,8 +9727,9 @@ So luong menh de la: 4448
  7  3  3  2  2  2  2  2  7 
  7  7  7  7  7  7  7  7  7 
 
+
 SAT
-Total time: 280
+Total time: 374
 --------------------------------
 9x9 121.in
 Kich thuoc ma tran: 9x9
@@ -9070,8 +9757,9 @@ So luong menh de la: 5372
  3  4  5  5  5  6  6  2  9 
  3  3  3  3  3  9  9  9  9 
 
+
 SAT
-Total time: 940
+Total time: 386
 --------------------------------
 9x9 122.in
 Kich thuoc ma tran: 9x9
@@ -9099,8 +9787,9 @@ So luong menh de la: 5323
  2  6  6  6  6  6  9  9  2 
  2  2  2  2  2  2  2  2  2 
 
+
 SAT
-Total time: 50
+Total time: 152
 --------------------------------
 9x9 123.in
 Kich thuoc ma tran: 9x9
@@ -9128,8 +9817,9 @@ So luong menh de la: 4944
  4  2  2  2  2  2  2  2  4 
  4  4  4  4  4  4  4  4  4 
 
+
 SAT
-Total time: 18800
+Total time: 176
 --------------------------------
 9x9 124.in
 Kich thuoc ma tran: 9x9
@@ -9157,8 +9847,9 @@ So luong menh de la: 5943
  4  5  5  7  9  8  9  6 10 
  4  4  4  7  9  9 10 10 10 
 
+
 SAT
-Total time: 6140
+Total time: 192
 --------------------------------
 9x9 130.in
 Kich thuoc ma tran: 9x9
@@ -9186,8 +9877,9 @@ So luong menh de la: 5356
  3  3  4  1  5  5  5  5  1 
  3  4  4  1  1  1  1  1  1 
 
+
 SAT
-Total time: 460
+Total time: 278
 --------------------------------
 9x9 131.in
 Kich thuoc ma tran: 9x9
@@ -9215,8 +9907,9 @@ So luong menh de la: 5832
  8  4  4  8  8  8  8  9 10 
  8  8  8  8  9  9  9  9 10 
 
+
 SAT
-Total time: 880
+Total time: 182
 --------------------------------
 9x9 132.in
 Kich thuoc ma tran: 9x9
@@ -9244,8 +9937,9 @@ So luong menh de la: 5887
  4  4  5  7  7  7  7  6  2 
  5  5  5  7  6  6  6  6  2 
 
+
 SAT
-Total time: 1180
+Total time: 296
 --------------------------------
 9x9 133.in
 Kich thuoc ma tran: 9x9
@@ -9273,8 +9967,9 @@ So luong menh de la: 5422
  4  4  4  4  6  6  6  6  5 
  5  5  5  5  5  5  5  5  5 
 
+
 SAT
-Total time: 410
+Total time: 280
 --------------------------------
 9x9 134.in
 Kich thuoc ma tran: 9x9
@@ -9302,8 +9997,9 @@ So luong menh de la: 4523
  1  3  2  2  2  2  7  7  4 
  1  1  1  1  1  2  2  7  7 
 
+
 SAT
-Total time: 640
+Total time: 440
 --------------------------------
 9x9 135.in
 Kich thuoc ma tran: 9x9
@@ -9331,8 +10027,9 @@ So luong menh de la: 5045
  2  2  1  8  7  8  8  6  2 
  1  1  1  8  8  8  6  6  2 
 
+
 SAT
-Total time: 410
+Total time: 302
 --------------------------------
 9x9 136.in
 Kich thuoc ma tran: 9x9
@@ -9360,8 +10057,9 @@ So luong menh de la: 5060
  2  3  3  7  7  7  7  7  2 
  2  2  2  2  2  2  2  2  2 
 
+
 SAT
-Total time: 40
+Total time: 394
 --------------------------------
 9x9 137.in
 Kich thuoc ma tran: 9x9
@@ -9389,8 +10087,9 @@ So luong menh de la: 4423
  1  4  4  5  5  5  5  4  7 
  1  1  4  4  4  4  4  4  7 
 
+
 SAT
-Total time: 1270
+Total time: 32
 --------------------------------
 9x9 138.in
 Kich thuoc ma tran: 9x9
@@ -9418,8 +10117,9 @@ So luong menh de la: 5074
  8  3  3  3  3  3  3  7  8 
  8  8  8  8  8  8  8  8  8 
 
+
 SAT
-Total time: 20
+Total time: 4085
 --------------------------------
 9x9 139.in
 Kich thuoc ma tran: 9x9
@@ -9447,8 +10147,9 @@ So luong menh de la: 5257
  2  8  8  9  9  9  9  9  2 
  2  2  2  2  2  2  2  2  2 
 
+
 SAT
-Total time: 1250
+Total time: 454
 --------------------------------
 9x9 140.in
 Kich thuoc ma tran: 9x9
@@ -9476,8 +10177,9 @@ So luong menh de la: 5504
  1  2  2  2  2  2  2  2  7 
  1  1  1  1  1  1  1  2  7 
 
+
 SAT
-Total time: 1420
+Total time: 170
 --------------------------------
 9x9 141.in
 Kich thuoc ma tran: 9x9
@@ -9505,8 +10207,9 @@ So luong menh de la: 4435
  5  3  7  7  3  4  6  6  4 
  5  3  3  3  3  4  4  4  4 
 
+
 SAT
-Total time: 940
+Total time: 3363
 --------------------------------
 9x9 142.in
 Kich thuoc ma tran: 9x9
@@ -9534,8 +10237,9 @@ So luong menh de la: 5906
  6  5  5  4  4  4  5  1  2 
  6  6  5  5  5  5  5  2  2 
 
+
 SAT
-Total time: 20
+Total time: 32
 --------------------------------
 9x9 143.in
 Kich thuoc ma tran: 9x9
@@ -9563,8 +10267,9 @@ So luong menh de la: 5089
  7  5  5  4  4  4  4  6  7 
  7  7  7  7  7  7  7  7  7 
 
+
 SAT
-Total time: 7480
+Total time: 522
 --------------------------------
 9x9 144.in
 Kich thuoc ma tran: 9x9
@@ -9592,8 +10297,9 @@ So luong menh de la: 5372
  7  5  5  5  6  6  6  6  4 
  7  5  4  4  4  4  4  4  4 
 
+
 SAT
-Total time: 11900
+Total time: 358
 --------------------------------
 9x9 145.in
 Kich thuoc ma tran: 9x9
@@ -9621,6 +10327,7 @@ So luong menh de la: 5002
  3  2  6  2  2  2  2  2  5 
  3  2  2  2  5  5  5  5  5 
 
+
 SAT
-Total time: 440
+Total time: 40
 --------------------------------
