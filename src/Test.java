@@ -18,7 +18,7 @@ public class Test {
     static String inputFolderPath1 = "./input/";
 //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
-    public static File outFile = new File("./output/out.txt");
+    public static File outFile = new File("./output/out3101.txt");
 
     static List<String> res;
 
@@ -57,7 +57,7 @@ public class Test {
                         executor.shutdown();            //        reject all further submissions
 
                         try {
-                            future.get(60, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
+                            future.get(900, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
                         } catch (InterruptedException e) {    //     possible error cases
                             System.out.println("job was interrupted");
                         } catch (ExecutionException e) {

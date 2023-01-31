@@ -22,7 +22,7 @@ public class Controller {
     static String sat = "UNSAT";
     static String time = "";
     static String parameters = "";
-    public static File outFile = new File("./output/log.txt");
+    public static File outFile = new File("./output/log3101.txt");
     private static String result;
 
     public static List<String> inFoList() {
