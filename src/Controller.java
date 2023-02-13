@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Controller {
-    public static File outFile = new File("./output/log231102_noALO.txt");
+    public static File outFile = new File("./output/log_test.txt");
     static NumberLink numberLink = new NumberLink();
     static IProblem problem = null;
     static long clause = 0;
@@ -192,10 +192,10 @@ public class Controller {
     }
 
     // Convert string to 2D String array
-    public static String[][] convertToArray(String input) {
+    public static String[][] convertToArray(String input, int r) {
         String[] rows = input.split("\n");
-        String[][] res = new String[rows.length][];
-        for (int i = 0; i < rows.length; i++) {
+        String[][] res = new String[r][];
+        for (int i = 0; i < r; i++) {
             rows[i] = rows[i].trim().replaceAll(" +", " ");
             String[] cols = rows[i].split(" ");
             res[i] = new String[cols.length];
@@ -282,7 +282,7 @@ public class Controller {
             solution = printResult(model, numberLink);
 
             // Handle loops
-            String[][] tmp = convertToArray(solution);
+            String[][] tmp = convertToArray(solution, numberLink.getRow());
             for (int i = 1; i <= numberLink.getMaxNum(); i++) {
                 // do something
                 int[][] arrNum = findNum(numberLink.getInputs(), i);
