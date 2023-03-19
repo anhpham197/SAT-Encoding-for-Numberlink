@@ -92,6 +92,8 @@ public class CNFConverter {
         int variables = 0;
         int clauses = 0;
         List<String> rules = new ArrayList<>();
+        int count = 0;
+        int[][] visited = new int[numberLink.getMaxNum() * 2][2];
         for (int i = 1; i < inputs.length; i++) {
             for (int j = 1; j < inputs[i].length; j++) {
 
@@ -102,12 +104,31 @@ public class CNFConverter {
                     List<String> rule0 = valueFromInput(i, j, inputs[i][j], numberLink);
                     List<String> rule1 = notValuesFromInput(i, j, inputs[i][j], numberLink);
                     List<String> rule2 = exact_one_direction(i, j, numberLink);
+                    List<String> rowConstraints = new ArrayList<>();
+                    List<String> colConstraints = new ArrayList<>();
 
                     rules.addAll(rule1);
                     rules.addAll(rule0);
                     rules.addAll(rule2);
 
                     clauses += rule0.size() + rule1.size() + rule2.size();
+
+                    if (!checkCellVisited(i, j, visited)) {
+                        // Mark numbered cells as visited
+                        int[] arrNum = findCellHasSameNumber(i, j, inputs[i][j], numberLink);
+                        visited[count][0] = i;
+                        visited[count][1] = j;
+                        visited[count + 1][0] = arrNum[0];
+                        visited[count + 1][1] = arrNum[1];
+                        count += 2;
+
+                        // Add constraints
+                        rowConstraints = rowConstraints(i, j, arrNum[0], arrNum[1], inputs[i][j], numberLink);
+                        colConstraints = colConstraints(i, j, arrNum[0], arrNum[1], inputs[i][j], numberLink);
+                        rules.addAll(rowConstraints);
+                        rules.addAll(colConstraints);
+                        clauses += colConstraints.size() + rowConstraints.size();
+                    }
 
                     // blank cell
                 } else {
@@ -421,6 +442,65 @@ public class CNFConverter {
                 secondClause += "0";
                 resultStringList.add(secondClause);
             }
+        }
+        return resultStringList;
+    }
+
+    // Constraints of rows and columns between two cells have same number
+
+    private int[] findCellHasSameNumber(int i, int j, int num, NumberLink numberlink) {
+        int[] arrNum = new int[2];
+        int[][] input = numberlink.getInputs();
+        for (int p = 1; p < input.length; p++) {
+            for (int q = 1; q < input[p].length; q++) {
+                if (p == i && q == j) continue;
+                else if (input[p][q] == num) {
+                    arrNum[0] = p;
+                    arrNum[1] = q;
+                    return arrNum;
+                }
+            }
+        }
+        return null;
+    }
+
+    private boolean checkCellVisited(int i, int j, int[][] visited) {
+        for (int p = 0; p < visited.length; p++)
+            if (visited[p][0] == i && visited[p][1] == j)
+                return true;
+        return false;
+    }
+
+    private List<String> rowConstraints(int x1, int y1, int x2, int y2, int num, NumberLink numberlink) {
+        List<String> resultStringList = new ArrayList<>();
+        int startRow = x1 < x2 ? x1 : x2;
+        int endRow = x1 > x2 ? x1 : x2;
+        for (int i = startRow; i <= endRow; i++) {
+            String clause = "";
+            for (int j = 1; j <= numberlink.getCol(); j++) {
+//                if ((i == x1 && j == y1) || (i == x2 && j == y2))
+//                    continue;
+                clause += computePosition(i, j, num, numberlink) + " ";
+            }
+            clause += "0";
+            resultStringList.add(clause);
+        }
+        return resultStringList;
+    }
+
+    private List<String> colConstraints(int x1, int y1, int x2, int y2, int num, NumberLink numberlink) {
+        List<String> resultStringList = new ArrayList<>();
+        int startCol = y1 < y2 ? y1 : y2;
+        int endCol = y1 > y2 ? y1 : y2;
+        for (int i = startCol; i <= endCol; i++) {
+            String clause = "";
+            for (int j = 1; j <= numberlink.getRow(); j++) {
+//                if ((j == x1 && i == y1) || (j == x2 && i == y2))
+//                    continue;
+                clause += computePosition(j, i, num, numberlink) + " ";
+            }
+            clause += "0";
+            resultStringList.add(clause);
         }
         return resultStringList;
     }
