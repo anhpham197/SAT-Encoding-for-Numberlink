@@ -18,7 +18,7 @@ public class Test {
     static String inputFolderPath1 = "./input/";
 //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
-    public static File outFile = new File("./output/out231302_noALO.txt");
+    public static File outFile = new File("./output/out232003_noALO_1800s_v1.txt");
 
     static List<String> res;
 
@@ -57,7 +57,7 @@ public class Test {
                         executor.shutdown();            //        reject all further submissions
 
                         try {
-                            future.get(1500, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
+                            future.get(1800, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
                         } catch (InterruptedException e) {    //     possible error cases
                             System.out.println("job was interrupted");
                         } catch (ExecutionException e) {
