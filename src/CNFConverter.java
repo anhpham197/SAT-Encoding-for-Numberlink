@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class CNFConverter {
     public static final int LEFT = 1;
@@ -147,6 +149,29 @@ public class CNFConverter {
                 adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - max_num * 2);
         // max_num * 2: tổng số ô có số trong bảng
         // Do chỉ thực hiện Encoding cho blank cells trong trường hợp onlyOneValue (mỗi ô chỉ có 1 giá trị)
+
+        // Convert string array to int array
+//        List<String> tmp = new ArrayList<>();
+//        for (String rule : rules) {
+//            String[] arr = rule.split(" ");
+//            for (String s : arr) {
+//                tmp.add(s);
+//            }
+//        }
+//        int[] res = new int[tmp.size()];
+//        for (int i = 0; i < tmp.size(); i++) {
+//            res[i] = Math.abs(Integer.parseInt(tmp.get(i)));
+//        }
+//
+//        // Count distinct number in res
+//        Set<Integer> set = new HashSet<>();
+//        for (int i : res) {
+//            if (i != 0) {
+//                set.add(i);
+//            }
+//        }
+//        System.out.println("Distinct number: " + set.size());
+
         return new SatEncoding(rules, clauses, variables);
     }
 
