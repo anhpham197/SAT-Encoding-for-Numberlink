@@ -5,3 +5,5 @@ inp
 src/Distinct.java
 src/Check.java
 SAT-Encoding-for-Numberlink.iml
+output/outtest.txt
+output/logtest.txt
