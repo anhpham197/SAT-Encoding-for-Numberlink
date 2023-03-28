@@ -15,10 +15,10 @@ public class Test {
     private static final int TIME = 5;
     private static final int SAT = 6;
     static Controller controller = new Controller();
-    static String inputFolderPath1 = "./input";
+    static String inputFolderPath1 = "./inp";
 //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
-    public static File outFile = new File("./output/out231803_noALO_1800s.txt");
+    public static File outFile = new File("./output/outtest.txt");
 
     static List<String> res;
 

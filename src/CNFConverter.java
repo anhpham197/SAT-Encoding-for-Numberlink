@@ -296,12 +296,12 @@ public class CNFConverter {
         int varsPerGroup = maxNum / groupSize;
 
         // ALO for groupSize groups
-//        String ALOclause = "";
-//        for (int k = 1; k <= groupSize; k++) {
-//            ALOclause += computePosition(i, j, k + maxNum, numberLink) + " ";
-//        }
-//        ALOclause += "0";
-//        resultStringList.add(ALOclause);
+        String ALOclause = "";
+        for (int k = 1; k <= groupSize; k++) {
+            ALOclause += computePosition(i, j, k + maxNum, numberLink) + " ";
+        }
+        ALOclause += "0";
+        resultStringList.add(ALOclause);
 
         // AMO on the set of all commander variables: (-c1 v -c2)  (-c1 v -c3)  (-c2 v -c3)
         for (int k = 1; k <= groupSize - 1; k++) {
@@ -378,8 +378,9 @@ public class CNFConverter {
             // last group
             String tmp = -computePosition(i, j, groupSize + maxNum, numberLink) + " ";
             for (int k = (groupSize - 1) * varsPerGroup; k <= maxNum; k++) {
-                tmp += computePosition(i, j, k, numberLink) + " 0";
+                tmp += computePosition(i, j, k, numberLink) + " ";
             }
+            tmp += "0";
             resultStringList.add(tmp);
         }
 

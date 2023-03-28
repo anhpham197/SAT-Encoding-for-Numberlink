@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Controller {
-    public static File outFile = new File("./output/log231803_noALO_1800S.txt");
+    public static File outFile = new File("./output/logtest.txt");
     static NumberLink numberLink = new NumberLink();
     static IProblem problem = null;
     static long clause = 0;
