@@ -168,3 +168,26 @@ So luong menh de la: 63898
 SAT
 Total time: 5733
 --------------------------------
+6x6 120.in
+Kich thuoc ma tran: 6x6
+Gia tri lon nhat: 4
+
+So luong bien la: 200
+So luong menh de la: 996
+1 0 0 0 0 0  
+0 0 2 0 3 4  
+0 0 0 3 0 2  
+0 0 0 0 0 1  
+0 0 0 0 4 0  
+0 0 0 0 0 0  
+
+ 1  4  4  4  4  4 
+ 1  4  2  3  3  4 
+ 1  4  2  3  2  2 
+ 1  4  2  2  2  1 
+ 1  4  4  4  4  1 
+ 1  1  1  1  1  1 
+
+SAT
+Total time: 175
+--------------------------------
