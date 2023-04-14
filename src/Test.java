@@ -2,8 +2,9 @@ import org.sat4j.reader.ParseFormatException;
 import org.sat4j.specs.ContradictionException;
 import org.sat4j.specs.TimeoutException;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.*;
 
 public class Test {
@@ -14,12 +15,11 @@ public class Test {
     private static final int CLAUSES_NUM = 4;
     private static final int TIME = 5;
     private static final int SAT = 6;
+    public static File outFile = new File("./output/outtest.txt");
     static Controller controller = new Controller();
-    static String inputFolderPath1 = "./input/";
-//    static String inputFolderPath2 = "E:\\Lab\\TC";
+    static String inputFolderPath1 = "./inp";
+    //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
-    public static File outFile = new File("./output/out232003_noALO_1800s_v1.txt");
-
     static List<String> res;
 
     public static void listFilesForFolder(final File folder) throws InterruptedException, IOException, TimeoutException, ParseFormatException, ContradictionException {
@@ -36,11 +36,12 @@ public class Test {
                         controller.read(fileEntry);
                         long t1 = System.currentTimeMillis();
                         ExecutorService executor = Executors.newFixedThreadPool(4);
+                        String finalFileName = fileName.substring(0, fileName.lastIndexOf('.')).replace(" ", "_");
                         Future<?> future = executor.submit(new Runnable() {
                             @Override
                             public void run() {
                                 try {
-                                    controller.encode();
+                                    controller.encode(finalFileName);
                                     //controller.write();
                                 } catch (IOException e) {
                                     e.printStackTrace();
@@ -57,7 +58,7 @@ public class Test {
                         executor.shutdown();            //        reject all further submissions
 
                         try {
-                            future.get(1800, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
+                            future.get(100, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
                         } catch (InterruptedException e) {    //     possible error cases
                             System.out.println("job was interrupted");
                         } catch (ExecutionException e) {
@@ -65,12 +66,12 @@ public class Test {
                         } catch (java.util.concurrent.TimeoutException e) {
                             future.cancel(true);              //     interrupt the job
                             System.out.println("timeout");
-                            controller.sat = "UNSAT";
-                            System.out.println("UNSAT");
+                            controller.sat = "UNKNOWN";
+                            System.out.println("UNKNOWN");
                             time = "time out";
                         }
                         // wait all unfinished tasks for sec
-                        if(!executor.awaitTermination(1, TimeUnit.SECONDS)){
+                        if (!executor.awaitTermination(1, TimeUnit.SECONDS)) {
                             // force them to quit by interrupting
                             executor.shutdownNow();
                         }
@@ -84,7 +85,7 @@ public class Test {
 
                         System.out.println("--------------------------------");
                         fileInfo += fileName + "\t" + res.get(ROWS) + "x" + res.get(COLS) + "\t" + res.get(MAX_NUM) + "\t"
-                                + res.get(VARS_NUM) + "\t" + res.get(CLAUSES_NUM) + "\t" + time+ "\t" + res.get(SAT);
+                                + res.get(VARS_NUM) + "\t" + res.get(CLAUSES_NUM) + "\t" + time + "\t" + res.get(SAT);
                     }
                     Controller.outputToTxt(fileInfo, outFile);
                 }

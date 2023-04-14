@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Controller {
-    public static File outFile = new File("./output/log232003_noALO_1800s_v1.txt");
+    public static File outFile = new File("./output/logtest.txt");
     static NumberLink numberLink = new NumberLink();
     static IProblem problem = null;
     static long clause = 0;
@@ -239,10 +239,11 @@ public class Controller {
         }
     }
 
-    public static void encode() throws IOException, TimeoutException, ParseFormatException, ContradictionException {
+    public static void encode(String fileName) throws IOException, TimeoutException, ParseFormatException, ContradictionException {
         long t1 = System.currentTimeMillis();
         // Ghi ra file CNF
-        File fileCNF = new File("text.cnf");
+        String fileCNFName = "./cnf_noALO/" + fileName + ".cnf";
+        File fileCNF = new File(fileCNFName);
         FileWriter writer = new FileWriter(fileCNF);
 
         //long t1 = System.currentTimeMillis();
@@ -268,9 +269,9 @@ public class Controller {
         // SAT Solve
         NumberLinkResponse response = new NumberLinkResponse();
         DimacsReader reader = new DimacsReader(SolverFactory.newDefault());
-        reader.parseInstance("text.cnf");
+        reader.parseInstance(fileCNFName);
         satSolver = new SATSolver(reader);
-        problem = satSolver.solve("text.cnf");
+        problem = satSolver.solve(fileCNFName);
 //        System.out.println(problem);
         satisfied = problem.isSatisfiable();
         result = parameters + "\nSo luong bien la: " + vars + "\n" +
