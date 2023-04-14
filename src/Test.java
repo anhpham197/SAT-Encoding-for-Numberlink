@@ -17,7 +17,7 @@ public class Test {
     private static final int SAT = 6;
     public static File outFile = new File("./output/outtest.txt");
     static Controller controller = new Controller();
-    static String inputFolderPath1 = "./input";
+    static String inputFolderPath1 = "./inp";
     //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
     static List<String> res;
