@@ -1,7 +1,6 @@
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 public class CNFConverter {
     public static final int LEFT = 1;
@@ -9,6 +8,8 @@ public class CNFConverter {
     public static final int UP = 3;
     public static final int DOWN = 4;
     public static int[] m_limit = new int[]{0, 1, 10, 1, 10};
+    int[][] source = new int[100][2];
+    int[][] target = new int[100][2];
 
     boolean isLUCornerCell(int i, int j) {
         return (i == 1 && j == 1);
@@ -94,8 +95,7 @@ public class CNFConverter {
         int variables = 0;
         int clauses = 0;
         List<String> rules = new ArrayList<>();
-        int count = 0;
-        int[][] visited = new int[numberLink.getMaxNum() * 2][2];
+        List<String> additionalRule = new ArrayList<>();
         for (int i = 1; i < inputs.length; i++) {
             for (int j = 1; j < inputs[i].length; j++) {
 
@@ -106,31 +106,22 @@ public class CNFConverter {
                     List<String> rule0 = valueFromInput(i, j, inputs[i][j], numberLink);
                     List<String> rule1 = notValuesFromInput(i, j, inputs[i][j], numberLink);
                     List<String> rule2 = exact_one_direction(i, j, numberLink);
-                    List<String> rowConstraints = new ArrayList<>();
-                    List<String> colConstraints = new ArrayList<>();
+
+                    int index = inputs[i][j];
+//                  Add index of numbered cells to source and target arrays
+                    if (source[index][0] == 0 && source[index][1] == 0) {
+                        source[index][0] = i;
+                        source[index][1] = j;
+                    } else {
+                        target[index][0] = i;
+                        target[index][1] = j;
+                    }
 
                     rules.addAll(rule1);
                     rules.addAll(rule0);
                     rules.addAll(rule2);
 
                     clauses += rule0.size() + rule1.size() + rule2.size();
-
-                    if (!checkCellVisited(i, j, visited)) {
-                        // Mark numbered cells as visited
-                        int[] arrNum = findCellHasSameNumber(i, j, inputs[i][j], numberLink);
-                        visited[count][0] = i;
-                        visited[count][1] = j;
-                        visited[count + 1][0] = arrNum[0];
-                        visited[count + 1][1] = arrNum[1];
-                        count += 2;
-
-                        // Add constraints
-                        rowConstraints = rowConstraints(i, j, arrNum[0], arrNum[1], inputs[i][j], numberLink);
-                        colConstraints = colConstraints(i, j, arrNum[0], arrNum[1], inputs[i][j], numberLink);
-                        rules.addAll(rowConstraints);
-                        rules.addAll(colConstraints);
-                        clauses += colConstraints.size() + rowConstraints.size();
-                    }
 
                     // blank cell
                 } else {
@@ -144,6 +135,14 @@ public class CNFConverter {
                 }
             }
         }
+
+        // Adding row and column contraints (addtional rule)
+        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
+        rules.addAll(additionalRule);
+        clauses += additionalRule.size();
+        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
+        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
+
         // Phải xem xem chỗ nào dùng biến thì mới cộng biến
         variables = m_limit[DOWN] * m_limit[RIGHT] * max_num +
                 adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - max_num * 2);
@@ -175,6 +174,39 @@ public class CNFConverter {
         return new SatEncoding(rules, clauses, variables);
     }
 
+    public List<String> additionalRule(int[][] source, int[][] target, int maxNum, int row, int col, int[][] inputs, NumberLink numberlink) {
+        List<String> res = new ArrayList<>();
+
+        for (int i = 1; i <= maxNum; i++) {
+            int startRow = source[i][0] > target[i][0] ? target[i][0] + 1 : source[i][0] + 1;
+            int endRow = source[i][0] > target[i][0] ? source[i][0] - 1 : target[i][0] - 1;
+            int startCol = source[i][1] > target[i][1] ? target[i][1] + 1 : source[i][1] + 1;
+            int endCol = source[i][1] > target[i][1] ? source[i][1] - 1 : target[i][1] - 1;
+            // Row constraints
+            for (int j = startRow; j <= endRow; j++) {
+                String rowConstraint = "";
+                for (int k = 1; k <= col; k++) {
+                    if (inputs[j][k] == 0) {
+                        rowConstraint += computePosition(j, k, i, numberlink) + " ";
+                    }
+                }
+                rowConstraint += "0";
+                res.add(rowConstraint);
+            }
+            // Col constraints
+            for (int j = startCol; j <= endCol; j++) {
+                String colConstraint = "";
+                for (int k = 1; k <= row; k++) {
+                    if (inputs[k][j] == 0) {
+                        colConstraint += computePosition(k, j, i, numberlink) + " ";
+                    }
+                }
+                colConstraint += "0";
+                res.add(colConstraint);
+            }
+        }
+        return res;
+    }
 
     // Blank cells have two directions
     private List<String> has_two_directions(int i, int j, NumberLink numberLink) {
@@ -321,12 +353,12 @@ public class CNFConverter {
         int varsPerGroup = maxNum / groupSize;
 
         // ALO for groupSize groups
-        String ALOclause = "";
-        for (int k = 1; k <= groupSize; k++) {
-            ALOclause += computePosition(i, j, k + maxNum, numberLink) + " ";
-        }
-        ALOclause += "0";
-        resultStringList.add(ALOclause);
+//        String ALOclause = "";
+//        for (int k = 1; k <= groupSize; k++) {
+//            ALOclause += computePosition(i, j, k + maxNum, numberLink) + " ";
+//        }
+//        ALOclause += "0";
+//        resultStringList.add(ALOclause);
 
         // AMO on the set of all commander variables: (-c1 v -c2)  (-c1 v -c3)  (-c2 v -c3)
         for (int k = 1; k <= groupSize - 1; k++) {

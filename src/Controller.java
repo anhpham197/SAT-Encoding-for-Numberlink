@@ -240,9 +240,9 @@ public class Controller {
     }
 
     public static void encode(String fileName) throws IOException, TimeoutException, ParseFormatException, ContradictionException {
-        long t1 = System.currentTimeMillis();
+        lo1ng t1 = System.currentTimeMillis();
         // Ghi ra file CNF
-        String fileCNFName = "./cnf/" + fileName + ".cnf";
+        String fileCNFName = "./cnf_noALO/" + fileName + ".cnf";
         File fileCNF = new File(fileCNFName);
         FileWriter writer = new FileWriter(fileCNF);
 

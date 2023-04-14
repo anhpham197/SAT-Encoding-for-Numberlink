@@ -66,8 +66,8 @@ public class Test {
                         } catch (java.util.concurrent.TimeoutException e) {
                             future.cancel(true);              //     interrupt the job
                             System.out.println("timeout");
-                            controller.sat = "UNSAT";
-                            System.out.println("UNSAT");
+                            controller.sat = "UNKNOWN";
+                            System.out.println("UNKNOWN");
                             time = "time out";
                         }
                         // wait all unfinished tasks for sec
