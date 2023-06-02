@@ -43,9 +43,9 @@ public class CNFConverter {
         return (i == 1 && (j > 1 && j < m_limit[RIGHT]));
     }
 
-    // Tồn tại duy nhất = tối đa + tối thiểu
+    // Ton tai duy nhat = toi da + toi thieu
 
-    // Các ô liền kề với ô đang xét
+    // Cac o lien ke voi cac o dang xet
     List<Integer> adjacentCells(int i, int j, int value, NumberLink numberLink) {
         List<Integer> res = new ArrayList<>();
         if (isLUCornerCell(i, j)) {
@@ -90,12 +90,14 @@ public class CNFConverter {
         m_limit[DOWN] = numberLink.getRow();
         m_limit[RIGHT] = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
-        int adding_vars = max_num - 1;
+        int row = (int) Math.ceil(Math.sqrt(max_num));
+        int col = (int) Math.ceil((double) max_num / row);
+        int adding_vars = row + col;
         int[][] inputs = numberLink.getInputs();
         int variables = 0;
         int clauses = 0;
         List<String> rules = new ArrayList<>();
-//        List<String> additionalRule = new ArrayList<>();
+        List<String> additionalRule = new ArrayList<>();
         for (int i = 1; i < inputs.length; i++) {
             for (int j = 1; j < inputs[i].length; j++) {
 
@@ -107,24 +109,24 @@ public class CNFConverter {
                     List<String> rule1 = notValuesFromInput(i, j, inputs[i][j], numberLink);
                     List<String> rule2 = exact_one_direction(i, j, numberLink);
 
-//                    int index = inputs[i][j];
-////                  Add index of numbered cells to source and target arrays
-//                    if (source[index][0] == 0 && source[index][1] == 0) {
-//                        source[index][0] = i;
-//                        source[index][1] = j;
-//                    } else {
-//                        target[index][0] = i;
-//                        target[index][1] = j;
-//                    }
+                    int index = inputs[i][j];
+//                  Add index of numbered cells to source and target arrays
+                    if (source[index][0] == 0 && source[index][1] == 0) {
+                        source[index][0] = i;
+                        source[index][1] = j;
+                    } else {
+                        target[index][0] = i;
+                        target[index][1] = j;
+                    }
 
-                    rules.addAll(rule1);
                     rules.addAll(rule0);
+                    rules.addAll(rule1);
                     rules.addAll(rule2);
 
                     clauses += rule0.size() + rule1.size() + rule2.size();
 
                     // blank cell
-                } else {
+                } else if (inputs[i][j] == 0) {
                     List<String> rule1 = onlyOneValue(i, j, numberLink);
                     List<String> rule2 = has_two_directions(i, j, numberLink);
 
@@ -136,67 +138,89 @@ public class CNFConverter {
             }
         }
 
-        // Adding row and column contraints (addtional rule)
-//        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
-//        rules.addAll(additionalRule);
-//        clauses += additionalRule.size();
-//        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
-//        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
+        // Adding row and column constraints (additional rule)
+        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
+        rules.addAll(additionalRule);
+        clauses += additionalRule.size();
+        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
+        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
 
-        // Phải xem xem chỗ nào dùng biến thì mới cộng biến
-        variables = m_limit[DOWN] * m_limit[RIGHT] * max_num +
-                adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - max_num * 2);
-        // max_num * 2: tổng số ô có số trong bảng
-        // Do chỉ thực hiện Encoding cho blank cells trong trường hợp onlyOneValue (mỗi ô chỉ có 1 giá trị)
+        // Phai xem xem cho nao dung bien thi moi cong bien
+        variables = m_limit[DOWN] * m_limit[RIGHT] * max_num + adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - 2 * max_num);
+        // max_num * 2: tong so o co so trong bang
+        // Do chi thuc hien Encoding cho blank cells trong truong hop onlyOneValue (moi o chi co 1 gia tri)
+
+        // Convert string array to int array
+//        List<String> tmp = new ArrayList<>();
+//        for (String rule : rules) {
+//            String[] arr = rule.split(" ");
+//            for (String s : arr) {
+//                tmp.add(s);
+//            }
+//        }
+//        int[] res = new int[tmp.size()];
+//        for (int i = 0; i < tmp.size(); i++) {
+//            res[i] = Math.abs(Integer.parseInt(tmp.get(i)));
+//        }
+//
+//        // Count distinct number in res
+//        Set<Integer> set = new HashSet<>();
+//        for (int i : res) {
+//            if (i != 0) {
+//                set.add(i);
+//            }
+//        }
+//        System.out.println("Distinct number: " + set.size());
+
         return new SatEncoding(rules, clauses, variables);
     }
 
-//    public List<String> additionalRule(int[][] source, int[][] target, int maxNum, int row, int col, int[][] inputs, NumberLink numberlink) {
-//        List<String> res = new ArrayList<>();
-//
-//        for (int i = 1; i <= maxNum; i++) {
-//            int startRow = source[i][0] > target[i][0] ? target[i][0] + 1 : source[i][0] + 1;
-//            int endRow = source[i][0] > target[i][0] ? source[i][0] - 1 : target[i][0] - 1;
-//            int startCol = source[i][1] > target[i][1] ? target[i][1] + 1 : source[i][1] + 1;
-//            int endCol = source[i][1] > target[i][1] ? source[i][1] - 1 : target[i][1] - 1;
-//            // Row constraints
-//            for (int j = startRow; j <= endRow; j++) {
-//                String rowConstraint = "";
-//                for (int k = 1; k <= col; k++) {
-//                    if (inputs[j][k] == 0) {
-//                        rowConstraint += computePosition(j, k, i, numberlink) + " ";
-//                    }
-//                }
-//                rowConstraint += "0";
-//                res.add(rowConstraint);
-//            }
-//            // Col constraints
-//            for (int j = startCol; j <= endCol; j++) {
-//                String colConstraint = "";
-//                for (int k = 1; k <= row; k++) {
-//                    if (inputs[k][j] == 0) {
-//                        colConstraint += computePosition(k, j, i, numberlink) + " ";
-//                    }
-//                }
-//                colConstraint += "0";
-//                res.add(colConstraint);
-//            }
-//        }
-//        return res;
-//    }
+    public List<String> additionalRule(int[][] source, int[][] target, int maxNum, int row, int col, int[][] inputs, NumberLink numberlink) {
+        List<String> res = new ArrayList<>();
+
+        for (int i = 1; i <= maxNum; i++) {
+            int startRow = source[i][0] > target[i][0] ? target[i][0] + 1 : source[i][0] + 1;
+            int endRow = source[i][0] > target[i][0] ? source[i][0] - 1 : target[i][0] - 1;
+            int startCol = source[i][1] > target[i][1] ? target[i][1] + 1 : source[i][1] + 1;
+            int endCol = source[i][1] > target[i][1] ? source[i][1] - 1 : target[i][1] - 1;
+            // Row constraints
+            for (int j = startRow; j <= endRow; j++) {
+                String rowConstraint = "";
+                for (int k = 1; k <= col; k++) {
+                    if (inputs[j][k] == 0) {
+                        rowConstraint += computePosition(j, k, i, numberlink) + " ";
+                    }
+                }
+                rowConstraint += "0";
+                res.add(rowConstraint);
+            }
+            // Col constraints
+            for (int j = startCol; j <= endCol; j++) {
+                String colConstraint = "";
+                for (int k = 1; k <= row; k++) {
+                    if (inputs[k][j] == 0) {
+                        colConstraint += computePosition(k, j, i, numberlink) + " ";
+                    }
+                }
+                colConstraint += "0";
+                res.add(colConstraint);
+            }
+        }
+        return res;
+    }
+
 
     // Blank cells have two directions
     private List<String> has_two_directions(int i, int j, NumberLink numberLink) {
         List<String> resultStringList = new ArrayList<>();
-
         String firstClause = "";
         for (int k = 1; k <= numberLink.getMaxNum(); k++) {
             firstClause = -computePosition(i, j, k, numberLink) + " ";
             List<Integer> adjacentCells = adjacentCells(i, j, k, numberLink);
             int numCells = adjacentCells.size();
-            // numCells == 2: ô ở vị trí góc --> (-Xijk v Xi(j+1)k) ^ (-Xijk v X(i+1)jk)
-            // numCells == 3: ô ở vị trí biên
-            // numCells == 4: ô ở các vị trí còn lại
+            // numCells == 2: � � v� tr� g�c --> (-Xijk v Xi(j+1)k) ^ (-Xijk v X(i+1)jk)
+            // numCells == 3: � � v� tr� bi�n
+            // numCells == 4: � � c�c v� tr� c�n l�i
             if (numCells == 2) {
                 for (int z = 0; z <= numCells - 1; z++) {
                     String tmp2 = firstClause + adjacentCells.get(z) + " ";
@@ -204,7 +228,7 @@ public class CNFConverter {
                     resultStringList.add(tmp2);
                 }
             } else if (numCells == 3) {
-                // 2 trong 3 hướng đi: (-Xijk v Xi(j-1)k v Xi(j+1)k) ^ (-Xijk v Xi(j-1)k v X(i+1)jk) ^ (-Xijk v X(i+1)jk v Xi(j+1)k)
+                // 2 trong 3 h��ng i: (-Xijk v Xi(j-1)k v Xi(j+1)k) ^ (-Xijk v Xi(j-1)k v X(i+1)jk) ^ (-Xijk v X(i+1)jk v Xi(j+1)k)
                 // At least 2 in 3 are TRUE
                 for (int t = 0; t <= numCells - 2; t++) {
                     String tmp1 = firstClause + adjacentCells.get(t) + " ";
@@ -215,7 +239,7 @@ public class CNFConverter {
                     }
                 }
             } else if (numCells == 4) {
-                // 2 trong 4 hướng đi: -Xijk v X(i+1)jk v Xi(j+1)k v
+                // 2 trong 4 huong di: -Xijk v X(i+1)jk v Xi(j+1)k v
                 // At least 2 in 4 are TRUE
                 for (int q = 0; q <= numCells - 3; q++) {
                     String tmp0 = firstClause + adjacentCells.get(q) + " ";
@@ -241,7 +265,7 @@ public class CNFConverter {
         }
 
 
-//        UEdge: ←, ↓, →
+//        UEdge: �, �, �
 //        res.add(computePosition(i, j - 1, value, numberLink));
 //        res.add(computePosition(i, j + 1, value, numberLink));
 //        res.add(computePosition(i + 1, j, value, numberLink));
@@ -303,8 +327,7 @@ public class CNFConverter {
         firstClause += "0";
         resultStringList.add(firstClause);
 
-        // AT MOST 1 is TRUE --> tại sao không dùng công thức dựa trên biến mới như trong slides thầy Khánh
-        // => Nếu dùng Sequential encounter encoding thì cần 5 mệnh đề để biểu diễn AT MOST ONE cho mỗi ô
+        // AT MOST 1 is TRUE --> t�i sao kh�ng d�ng c�ng th�c d�a tr�n bi�n m�i nh� trong slides th�y Kh�nh
         int numCells = adjacentCells.size();
         for (int k = 0; k <= numCells - 2; k++) {
             String secondClause = -adjacentCells.get(k) + " ";
@@ -325,33 +348,76 @@ public class CNFConverter {
     private List<String> onlyOneValue(int i, int j, NumberLink numberLink) {
         List<String> resultStringList = new ArrayList<>();
         int maxNum = numberLink.getMaxNum();
-        int newVars = maxNum - 1;
-        // ALO
-        String ALOclauses = "";
-        for (int k = 1; k <= maxNum; k++) {
-            ALOclauses += computePosition(i, j, k, numberLink) + " ";
-        }
-        ALOclauses += "0";
-        resultStringList.add(ALOclauses);
+        int row = (int) Math.ceil(Math.sqrt(maxNum));
+        int col = (int) Math.ceil((double) maxNum / row);
+        int newVars = row + col; // k --> row --> col
 
-        // AMO
-        String firstClause = "";
-        firstClause += -computePosition(i, j, 1, numberLink) + " " + computePosition(i, j, maxNum + 1, numberLink) + " 0";
-        resultStringList.add(firstClause);
-        for (int k = 2; k < numberLink.getMaxNum(); k++) {
-            String tmp1 = -computePosition(i, j, k, numberLink) + " " + computePosition(i, j, k + maxNum, numberLink) + " 0";
-            String tmp2 = -computePosition(i, j, k - 1 + maxNum, numberLink) + " " + computePosition(i, j, k + maxNum, numberLink) + " 0";
-            String tmp3 = -computePosition(i, j, k - 1 + maxNum, numberLink) + " " + -computePosition(i, j, k, numberLink) + " 0";
-            resultStringList.add(tmp1);
-            resultStringList.add(tmp2);
-            resultStringList.add(tmp3);
+        // ALO
+//        String ALOclause = "";
+//        for (int k = 1; k <= maxNum; k++) {
+//            ALOclause += computePosition(i, j, k, numberLink) + " ";
+//        }
+//        ALOclause += "0";
+//        resultStringList.add(ALOclause);
+
+        // AMO for group of rows
+        for (int r = 1; r <= row - 1; r++) {
+            String tmp = -computePosition(i, j, r + maxNum, numberLink) + " ";
+            for (int k = r + 1; k <= row; k++) {
+                String clause = tmp + -computePosition(i, j, k + maxNum, numberLink) + " 0";
+                resultStringList.add(clause);
+            }
         }
-        String finalClause = "";
-        finalClause += -computePosition(i, j, newVars + maxNum, numberLink) + " " + -computePosition(i, j, maxNum, numberLink) + " 0";
-        resultStringList.add(finalClause);
+
+        // AMO for group of columns
+        for (int c = 1; c <= col - 1; c++) {
+            String tmp = -computePosition(i, j, c + maxNum + row, numberLink) + " ";
+            for (int k = c + 1; k <= col; k++) {
+                String clause = tmp + -computePosition(i, j, k + maxNum + row, numberLink) + " 0";
+                resultStringList.add(clause);
+            }
+        }
+
+        // Xi � ru ' cv <=> (-Xi v ru) ' (-Xi v cv)
+        int num = 1;
+        int[][] value = new int[row][col];
+        for (int r = 0; r < row; r++) {
+            for (int c = 0; c < col; c++) {
+                if (num <= maxNum) {
+                    value[r][c] = num;
+                    num++;
+                } else {
+                    break;
+                }
+            }
+        }
+        for (int k = 1; k <= maxNum; k++) {
+            int r = findIndex(value, k)[0];
+            int c = findIndex(value, k)[1];
+            String tmp = -computePosition(i, j, k, numberLink) + " ";
+            String rowClause = tmp + computePosition(i, j, r + maxNum, numberLink) + " 0";
+            String colClause = tmp + computePosition(i, j, c + maxNum + row, numberLink) + " 0";
+            resultStringList.add(rowClause);
+            resultStringList.add(colClause);
+        }
         return resultStringList;
     }
 
+
+    // Find the index of 2d array
+    private int[] findIndex(int[][] arr, int value) {
+        int[] index = new int[2];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] == value) {
+                    index[0] = i + 1;
+                    index[1] = j + 1;
+                    break;
+                }
+            }
+        }
+        return index;
+    }
 
     // For numbered cells: only the existed value is TRUE
     private List<String> valueFromInput(int i, int j, int num, NumberLink numberLink) {
@@ -381,14 +447,15 @@ public class CNFConverter {
         return resultStringList;
     }
 
-
     private int computePosition(int i, int j, int value, NumberLink numberLink) {
         int n = numberLink.getCol();
-        int max_num = numberLink.getMaxNum();
-        int adding_vars = max_num - 1;
-        int X_vars = numberLink.getRow() * numberLink.getCol() * max_num;
-        if (value <= max_num)
-            return n * (i - 1) * max_num + (j - 1) * max_num + value;
+        int maxNum = numberLink.getMaxNum();
+        int row = (int) Math.ceil(Math.sqrt(maxNum));
+        int col = (int) Math.ceil((double) maxNum / row);
+        int adding_vars = row + col;
+        int X_vars = numberLink.getRow() * numberLink.getCol() * maxNum;
+        if (value <= maxNum)
+            return n * (i - 1) * maxNum + (j - 1) * maxNum + value;
         return X_vars + n * (i - 1) * adding_vars + (j - 1) * adding_vars + value;
     }
 
