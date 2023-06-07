@@ -341,12 +341,12 @@ public class CNFConverter {
         int X_vars = numberLink.getCol() * numberLink.getRow() * maxNum;
         int newVars = maxNum - 1;
         // ALO
-        String ALOclauses = "";
-        for (int k = 1; k <= maxNum; k++) {
-            ALOclauses += computePosition(i, j, k, numberLink) + " ";
-        }
-        ALOclauses += "0";
-        resultStringList.add(ALOclauses);
+//        String ALOclauses = "";
+//        for (int k = 1; k <= maxNum; k++) {
+//            ALOclauses += computePosition(i, j, k, numberLink) + " ";
+//        }
+//        ALOclauses += "0";
+//        resultStringList.add(ALOclauses);
 
         // AMO
         String firstClause = "";
