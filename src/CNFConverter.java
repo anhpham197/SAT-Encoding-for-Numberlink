@@ -10,6 +10,7 @@ public class CNFConverter {
     public static int[] m_limit = new int[]{0, 1, 10, 1, 10};
     int[][] source = new int[100][2];
     int[][] target = new int[100][2];
+    int[][] blankCells;
 
     boolean isLUCornerCell(int i, int j) {
         return (i == 1 && j == 1);
@@ -94,6 +95,9 @@ public class CNFConverter {
         int[][] inputs = numberLink.getInputs();
         int variables = 0;
         int clauses = 0;
+        int numOfBlankCells = m_limit[DOWN] * m_limit[RIGHT] - max_num * 2;
+        blankCells = new int[numOfBlankCells][2];
+        int indexBlankCell = 0;
         List<String> rules = new ArrayList<>();
         List<String> additionalRule = new ArrayList<>();
         for (int i = 1; i < inputs.length; i++) {
@@ -125,6 +129,9 @@ public class CNFConverter {
 
                     // blank cell
                 } else {
+                    blankCells[indexBlankCell][0] = i;
+                    blankCells[indexBlankCell][1] = j;
+                    indexBlankCell++;
                     List<String> rule1 = onlyOneValue(i, j, numberLink);
                     List<String> rule2 = has_two_directions(i, j, numberLink);
 
@@ -348,23 +355,24 @@ public class CNFConverter {
     private List<String> onlyOneValue(int i, int j, NumberLink numberLink) {
         List<String> resultStringList = new ArrayList<>();
         int maxNum = numberLink.getMaxNum();
+        int X_vars = numberLink.getCol() * numberLink.getRow() * maxNum;
         // newVars = groupSize
         int groupSize = (int) Math.sqrt(maxNum);
         int varsPerGroup = maxNum / groupSize;
 
         // ALO for groupSize groups
-        String ALOclause = "";
-        for (int k = 1; k <= groupSize; k++) {
-            ALOclause += computePosition(i, j, k + maxNum, numberLink) + " ";
-        }
-        ALOclause += "0";
-        resultStringList.add(ALOclause);
+//        String ALOclause = "";
+//        for (int k = 1; k <= groupSize; k++) {
+//            ALOclause += computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
+//        }
+//        ALOclause += "0";
+//        resultStringList.add(ALOclause);
 
         // AMO on the set of all commander variables: (-c1 v -c2)  (-c1 v -c3)  (-c2 v -c3)
         for (int k = 1; k <= groupSize - 1; k++) {
-            String tmp = -computePosition(i, j, k + maxNum, numberLink) + " ";
+            String tmp = -computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
             for (int q = k + 1; q <= groupSize; q++) {
-                String clause = tmp + -computePosition(i, j, q + maxNum, numberLink) + " 0";
+                String clause = tmp + -computePositionForBlankCell(i, j, X_vars, groupSize, q, blankCells) + " 0";
                 resultStringList.add(clause);
             }
         }
@@ -412,7 +420,7 @@ public class CNFConverter {
         int endOfCi = varsPerGroup;
         if (maxNum % groupSize == 0) {
             for (int k = 1; k <= groupSize; k++) {
-                String tmp = -computePosition(i, j, k + maxNum, numberLink) + " ";
+                String tmp = -computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
                 for (int q = startOfCi; q <= endOfCi; q++) {
                     tmp += computePosition(i, j, q, numberLink) + " ";
                 }
@@ -423,7 +431,7 @@ public class CNFConverter {
             }
         } else {
             for (int k = 1; k < groupSize; k++) {
-                String tmp = -computePosition(i, j, k + maxNum, numberLink) + " ";
+                String tmp = -computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
                 for (int q = startOfCi; q <= endOfCi; q++) {
                     tmp += computePosition(i, j, q, numberLink) + " ";
                 }
@@ -433,7 +441,7 @@ public class CNFConverter {
                 endOfCi += varsPerGroup;
             }
             // last group
-            String tmp = -computePosition(i, j, groupSize + maxNum, numberLink) + " ";
+            String tmp = -computePositionForBlankCell(i, j, X_vars, groupSize, groupSize, blankCells) + " ";
             for (int k = (groupSize - 1) * varsPerGroup; k <= maxNum; k++) {
                 tmp += computePosition(i, j, k, numberLink) + " ";
             }
@@ -446,7 +454,7 @@ public class CNFConverter {
         endOfCi = varsPerGroup;
         if (maxNum % groupSize == 0) {
             for (int k = 1; k <= groupSize; k++) {
-                String tmp = computePosition(i, j, k + maxNum, numberLink) + " ";
+                String tmp = computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
                 for (int l = startOfCi; l <= endOfCi; l++) {
                     String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
                     resultStringList.add(clause);
@@ -456,7 +464,7 @@ public class CNFConverter {
             }
         } else {
             for (int k = 1; k < groupSize; k++) {
-                String tmp = computePosition(i, j, k + maxNum, numberLink) + " ";
+                String tmp = computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
                 for (int l = startOfCi; l <= endOfCi; l++) {
                     String clause = tmp + -computePosition(i, j, l, numberLink) + " 0";
                     resultStringList.add(clause);
@@ -465,7 +473,7 @@ public class CNFConverter {
                 endOfCi += varsPerGroup;
             }
             // last group
-            String tmp = computePosition(i, j, groupSize + maxNum, numberLink) + " ";
+            String tmp = computePositionForBlankCell(i, j, X_vars, groupSize, groupSize, blankCells)+ " ";
             for (int k = (groupSize - 1) * varsPerGroup + 1; k <= maxNum; k++) {
                 String clause = tmp + -computePosition(i, j, k, numberLink) + " 0";
                 resultStringList.add(clause);
@@ -567,11 +575,17 @@ public class CNFConverter {
     private int computePosition(int i, int j, int value, NumberLink numberLink) {
         int n = numberLink.getCol();
         int max_num = numberLink.getMaxNum();
-        int adding_vars = (int) Math.sqrt(max_num);
-        int X_vars = numberLink.getRow() * numberLink.getCol() * max_num;
-        if (value <= max_num)
-            return n * (i - 1) * max_num + (j - 1) * max_num + value;
-        return X_vars + n * (i - 1) * adding_vars + (j - 1) * adding_vars + value;
+        return n * (i - 1) * max_num + (j - 1) * max_num + value;
+    }
+
+    private int computePositionForBlankCell(int i, int j, int X_vars, int newVars, int value, int[][] blankCells) {
+        int[] subArr = {i, j};
+        for (int k = 0; k < blankCells.length; k++) {
+            if (Arrays.equals(blankCells[k], subArr)) {
+                return X_vars + k * newVars + value;
+            }
+        }
+        return -1;
     }
 
     public int getValueOfY(int positionValue, int maxNum, NumberLink numberLink) {

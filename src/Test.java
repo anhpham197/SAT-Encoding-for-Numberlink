@@ -15,9 +15,9 @@ public class Test {
     private static final int CLAUSES_NUM = 4;
     private static final int TIME = 5;
     private static final int SAT = 6;
-    public static File outFile = new File("./output/outtest.txt");
+    public static File outFile = new File("./output/outtestindex_noALO_070623.txt");
     static Controller controller = new Controller();
-    static String inputFolderPath1 = "./inp";
+    static String inputFolderPath1 = "./input";
     //    static String inputFolderPath2 = "E:\\Lab\\TC";
     public static File inFolder = new File(inputFolderPath1);
     static List<String> res;
@@ -58,7 +58,7 @@ public class Test {
                         executor.shutdown();            //        reject all further submissions
 
                         try {
-                            future.get(10, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
+                            future.get(500, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
                         } catch (InterruptedException e) {    //     possible error cases
                             System.out.println("job was interrupted");
                         } catch (ExecutionException e) {
