@@ -44,9 +44,9 @@ public class CNFConverter {
         return (i == 1 && (j > 1 && j < m_limit[RIGHT]));
     }
 
-    // T�n t�i duy nh�t = t�i a + t�i thi�u
+    // Only = at least + at most
 
-    // C�c � li�n k� v�i � ang x�t
+    // Find all adjacent cells of cell (i, j)
     List<Integer> adjacentCells(int i, int j, int value, NumberLink numberLink) {
         List<Integer> res = new ArrayList<>();
         if (isLUCornerCell(i, j)) {
@@ -144,17 +144,17 @@ public class CNFConverter {
         }
 
         // Adding row and column contraints (addtional rule)
-        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
-        rules.addAll(additionalRule);
-        clauses += additionalRule.size();
-        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
-        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
+//        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
+//        rules.addAll(additionalRule);
+//        clauses += additionalRule.size();
+//        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
+//        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
 
-        // Ph�i xem xem ch� n�o d�ng bi�n th� m�i c�ng bi�n
+        // Cho nao dung bien thi moi cong bien
         variables = m_limit[DOWN] * m_limit[RIGHT] * max_num +
                 adding_vars * numOfBlankCells;
-        // max_num * 2: t�ng s� � c� s� trong b�ng
-        // Do ch� th�c hi�n Encoding cho blank cells trong tr��ng h�p onlyOneValue (m�i � ch� c� 1 gi� tr�)
+        // max_num * 2: the number of numbered cells
+        // Do chi thuc hien Encoding cho blank cells trong truong hop onlyOneValue (moi o chi co 1 gia tri)
 //        for (int i = 0; i < blankCells.length; i++) {
 //            for (int j = 0; j < 2; j++) {
 //                System.out.print(blankCells[i][j] + " ");
@@ -207,9 +207,9 @@ public class CNFConverter {
             firstClause = -computePosition(i, j, k, numberLink) + " ";
             List<Integer> adjacentCells = adjacentCells(i, j, k, numberLink);
             int numCells = adjacentCells.size();
-            // numCells == 2: � � v� tr� g�c --> (-Xijk v Xi(j+1)k) ^ (-Xijk v X(i+1)jk)
-            // numCells == 3: � � v� tr� bi�n
-            // numCells == 4: � � c�c v� tr� c�n l�i
+            // numCells == 2: cac o o vi tri goc --> (-Xijk v Xi(j+1)k) ^ (-Xijk v X(i+1)jk)
+            // numCells == 3: cac o o vi tri bien
+            // numCells == 4: cac o con lai
             if (numCells == 2) {
                 for (int z = 0; z <= numCells - 1; z++) {
                     String tmp2 = firstClause + adjacentCells.get(z) + " ";
@@ -217,7 +217,7 @@ public class CNFConverter {
                     resultStringList.add(tmp2);
                 }
             } else if (numCells == 3) {
-                // 2 trong 3 h��ng i: (-Xijk v Xi(j-1)k v Xi(j+1)k) ^ (-Xijk v Xi(j-1)k v X(i+1)jk) ^ (-Xijk v X(i+1)jk v Xi(j+1)k)
+                // 2 trong 3 huong di: (-Xijk v Xi(j-1)k v Xi(j+1)k) ^ (-Xijk v Xi(j-1)k v X(i+1)jk) ^ (-Xijk v X(i+1)jk v Xi(j+1)k)
                 // At least 2 in 3 are TRUE
                 for (int t = 0; t <= numCells - 2; t++) {
                     String tmp1 = firstClause + adjacentCells.get(t) + " ";
@@ -228,7 +228,7 @@ public class CNFConverter {
                     }
                 }
             } else if (numCells == 4) {
-                // 2 trong 4 h��ng i: -Xijk v X(i+1)jk v Xi(j+1)k v
+                // 2 trong 4 huong di: -Xijk v X(i+1)jk v Xi(j+1)k v
                 // At least 2 in 4 are TRUE
                 for (int q = 0; q <= numCells - 3; q++) {
                     String tmp0 = firstClause + adjacentCells.get(q) + " ";
@@ -316,8 +316,6 @@ public class CNFConverter {
         firstClause += "0";
         resultStringList.add(firstClause);
 
-        // AT MOST 1 is TRUE --> t�i sao kh�ng d�ng c�ng th�c d�a tr�n bi�n m�i nh� trong slides th�y Kh�nh
-        // => N�u d�ng Sequential encounter encoding th� c�n 5 m�nh � � bi�u di�n AT MOST ONE cho m�i �
         int numCells = adjacentCells.size();
         for (int k = 0; k <= numCells - 2; k++) {
             String secondClause = -adjacentCells.get(k) + " ";
@@ -341,12 +339,12 @@ public class CNFConverter {
         int X_vars = numberLink.getCol() * numberLink.getRow() * maxNum;
         int newVars = maxNum - 1;
         // ALO
-//        String ALOclauses = "";
-//        for (int k = 1; k <= maxNum; k++) {
-//            ALOclauses += computePosition(i, j, k, numberLink) + " ";
-//        }
-//        ALOclauses += "0";
-//        resultStringList.add(ALOclauses);
+        String ALOclauses = "";
+        for (int k = 1; k <= maxNum; k++) {
+            ALOclauses += computePosition(i, j, k, numberLink) + " ";
+        }
+        ALOclauses += "0";
+        resultStringList.add(ALOclauses);
 
         // AMO
         String firstClause = "";
