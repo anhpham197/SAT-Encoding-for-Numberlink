@@ -144,11 +144,11 @@ public class CNFConverter {
         }
 
         // Adding row and column contraints (addtional rule)
-        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
-        rules.addAll(additionalRule);
-        clauses += additionalRule.size();
-        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
-        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
+//        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
+//        rules.addAll(additionalRule);
+//        clauses += additionalRule.size();
+//        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
+//        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
 
         // Phải xem xem chỗ nào dùng biến thì mới cộng biến
         variables = m_limit[DOWN] * m_limit[RIGHT] * max_num +
@@ -361,12 +361,12 @@ public class CNFConverter {
         int varsPerGroup = maxNum / groupSize;
 
         // ALO for groupSize groups
-        String ALOclause = "";
-        for (int k = 1; k <= groupSize; k++) {
-            ALOclause += computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
-        }
-        ALOclause += "0";
-        resultStringList.add(ALOclause);
+//        String ALOclause = "";
+//        for (int k = 1; k <= groupSize; k++) {
+//            ALOclause += computePositionForBlankCell(i, j, X_vars, groupSize, k, blankCells) + " ";
+//        }
+//        ALOclause += "0";
+//        resultStringList.add(ALOclause);
 
         // AMO on the set of all commander variables: (-c1 v -c2)  (-c1 v -c3)  (-c2 v -c3)
         for (int k = 1; k <= groupSize - 1; k++) {
