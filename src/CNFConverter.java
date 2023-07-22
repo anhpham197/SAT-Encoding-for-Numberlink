@@ -146,11 +146,11 @@ public class CNFConverter {
         }
 
         // Adding row and column constraints (additional rule)
-        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
-        rules.addAll(additionalRule);
-        clauses += additionalRule.size();
-        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
-        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
+//        additionalRule = additionalRule(source, target, max_num, m_limit[DOWN], m_limit[RIGHT], inputs, numberLink);
+//        rules.addAll(additionalRule);
+//        clauses += additionalRule.size();
+//        Arrays.stream(source).forEach(x -> Arrays.fill(x, 0));
+//        Arrays.stream(target).forEach(x -> Arrays.fill(x, 0));
 
         // Phai xem xem cho nao dung bien thi moi cong bien
         variables = m_limit[DOWN] * m_limit[RIGHT] * max_num + adding_vars * (m_limit[DOWN] * m_limit[RIGHT] - 2 * max_num);

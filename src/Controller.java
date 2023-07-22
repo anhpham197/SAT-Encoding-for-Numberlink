@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Controller {
-    public static File outFile = new File("./output/logtestindex_noALO_090623.txt");
+    public static File outFile = new File("./output/logtestindex_noALO_200723.txt");
     static NumberLink numberLink = new NumberLink();
     static IProblem problem = null;
     static long clause = 0;
@@ -242,7 +242,7 @@ public class Controller {
     public static void encode(String fileName) throws IOException, TimeoutException, ParseFormatException, ContradictionException {
         long t1 = System.currentTimeMillis();
         // Ghi ra file CNF
-        String fileCNFName = "./cnf_noALO_v3/" + fileName + ".cnf";
+        String fileCNFName = "./cnf_noALO_v4/" + fileName + ".cnf";
         File fileCNF = new File(fileCNFName);
         FileWriter writer = new FileWriter(fileCNF);
 
